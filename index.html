@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс</title>
+  <!--
+  <link rel="stylesheet" href="css/style.css">
+  -->
+</head>
+<body>
+  <div class="container">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <!-- header -->
+    <header class="page-header">
+      <!-- header logo -->
+      <div class="page-header__logo">
+        <p class="page-header__text">Device</p>
+      </div>
 
-  </body>
+      <div class="page-header__middle">
+
+        <!-- search -->
+        <form class="page-header__form" action="url" method="post">
+          <label class="visually-hidden" for="search-form">Поле поиска</label>
+          <input class="page-header__form-search" id="search-form" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="page-header__form-button" type="button">Найти</button>
+        </form>
+
+        <!-- links -->
+        <a class="page-header__login page-header__link" href="#">Войти</a>
+        <a class="page-header__compare page-header__link" href="#">Сравнить</a>
+        <a class="page-header__basket page-header__link" href="#">Корзина</a>
+
+      </div>
+
+      <!-- main navigation -->
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <!-- class: positioning (относительно этого элемента будет позиционироваться подменю) -->
+          <li class="navigation__item navigation__item_positioning"><a class="navigation__link" href="#">Каталог товаров</a>
+
+            <!-- подменю -->
+            <ul class="navigation__list-column">
+              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Виртуальная реальность</a></li>
+              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Монопподы для селфи</a></li>
+              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Экшн-камеры</a></li>
+              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Фитнес браслеты</a></li>
+              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Умные часы</a></li>
+              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Квадракоптеры</a></li>
+            </ul>
+
+          </li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Гарантия</a></li>
+          <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+
+      <!-- information -->
+      <section class="information">
+        <!-- about -->
+        <div class="information__about">
+          <h2 class="information__about-title">О нас</h2>
+          <p class="information__about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="information__about-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+
+          <ul class="information__partnership-list partnership">
+            <li class="partnership__item">Деловые Линии</li>
+            <li class="partnership__item">Автотрейдинг</li>
+            <li class="partnership__item">ЖелДорЭкспедиция</li>
+          </ul>
+
+          <a class="information__about-button button" href="#">Подробнее о нас</a>
+
+        </div>
+
+        <!-- contacts -->
+        <div class="information__contacts">
+          <h2 class="information__contacts-title">Контакты</h2>
+          <p class="information__contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <img class="information__contacts-image" src="" width="560" height="222" alt="город Санкт-Петербург, улица Строителей, дом 15">
+
+          <button class="information__contacts-button button" type="button">Напишите нам</button>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
 </html>

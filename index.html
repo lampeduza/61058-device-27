@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <!--
   <link rel="stylesheet" href="css/style.css">
+  -->
 </head>
 <body>
-
-
+  <div class="container">
     <!-- header -->
     <header class="page-header">
       <!-- header logo -->
-      <div class="page-header__logo">
-        <p class="page-header__text">Device</p>
-      </div>
+      <a class="page-header__logo">
+        <img class="page-header__picture" src="" width="163" height="35" alt="Логотип сайта Девайс">
+      </a>
 
       <div class="page-header__middle">
 
@@ -54,11 +55,13 @@
         </ul>
       </nav>
     </header>
+  </div>
 
-    <main class="page-main">
+  <main class="page-main">
 
-      <!-- information -->
-      <section class="information">
+    <!-- information -->
+    <section class="information">
+      <div class="container">
         <!-- about -->
         <div class="information__about">
           <h2 class="information__about-title">О нас</h2>
@@ -83,51 +86,50 @@
 
           <button class="information__contacts-button button" type="button">Напишите нам</button>
         </div>
-      </section>
+      </div> <!-- end container -->
+    </section>
+  </main>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
 
-      <!-- footer -->
+      <!-- center column -->
+      <div class="footer__left">
+        <img class="footer__left-logo" src="" width="163" height="35" alt="Логотип сайта Девайс">
+        <p class="footer__left-text footer__text"></p>
+      </div>
 
+      <!-- navigation -->
+      <div class="footer__center">
+        <ul class="footer__center-navigation">
+          <li class="footer__center-item"><a class="footer__center-link" href="#">Доставка</a></li>
+          <li class="footer__center-item"><a class="footer__center-link" href="#">Гарантия</a></li>
+          <li class="footer__center-item"><a class="footer__center-link" href="#">Контакты</a></li>
+        </ul>
 
+        <ul class="footer__center-social social-list">
+          <li class="social-list__item"><a href="" class="social-list__link social-list__link_vk" aria-label="Фейсбук"></a></li>
+          <li class="social-list__item"><a href="" class="social-list__link social-list__link_inst" aria-label="Инстаграм"></a></li>
+          <li class="social-list__item"><a href="" class="social-list__link social-list__link_tw" aria-label="Твитер"></a></li>
+        </ul>
+      </div>
 
-      <footer class="footer">
+      <!-- right column -->
+      <div class="footer__right">
+        <ul class="footer__right-navigation">
+          <li class="footer__right-item"><a href="" class="footer__right-link">Войти</a></li>
+          <li class="footer__right-item"><a href="" class="footer__right-link">Сравнить</a></li>
+          <li class="footer__right-item"><a href="" class="footer__right-link">Корзина</a></li>
+        </ul>
 
-        <!-- center column -->
-          <div class="footer__left">
-            <img class="footer__left-logo" src="" width="163" height="35" alt="Логотип сайта Девайс">
-            <p class="footer__left-text footer__text"></p>
-          </div>
+        <p class="footer__text">Тел.: +7 (495) 495-95-95</p>
+        <a class="footer__right-logo" href="#" aria-label="Ссылка на профессиональный курс html и css, уровень 1">
+          <img class="footer__right-logo" src="" width="22" height="35" alt="Логотип сайта htmlacademy">
+        </a>
+      </div>
+    </div> <!-- end container -->
+  </footer>
 
-          <!-- navigation -->
-          <div class="footer__center">
-            <ul class="footer__center-navigation">
-              <li class="footer__center-item"><a class="footer__center-link" href="#">Доставка</a></li>
-              <li class="footer__center-item"><a class="footer__center-link" href="#">Гарантия</a></li>
-              <li class="footer__center-item"><a class="footer__center-link" href="#">Контакты</a></li>
-            </ul>
-
-            <ul class="footer__center-social social-list">
-              <li class="social-list__item"><a href="" class="social-list__link social-list__link_vk" aria-label="Фейсбук"></a></li>
-              <li class="social-list__item"><a href="" class="social-list__link social-list__link_inst" aria-label="Инстаграм"></a></li>
-              <li class="social-list__item"><a href="" class="social-list__link social-list__link_tw" aria-label="Твитер"></a></li>
-            </ul>
-          </div>
-
-          <!-- right column -->
-          <div class="footer__right">
-            <ul class="footer__right-navigation">
-              <li class="footer__right-item"><a href="" class="footer__right-link">Войти</a></li>
-              <li class="footer__right-item"><a href="" class="footer__right-link">Сравнить</a></li>
-              <li class="footer__right-item"><a href="" class="footer__right-link">Корзина</a></li>
-            </ul>
-
-            <p class="footer__text">Тел.: +7 (495) 495-95-95</p>
-            <a class="footer__right-logo" href="#" aria-label="Ссылка на профессиональный курс html и css, уровень 1">
-              <img class="footer__right-logo" src="" width="22" height="35" alt="Логотип сайта htmlacademy">
-            </a>
-          </div>
-      </footer>
-
-    </main>
-  </div>
+</div>
 </body>
 </html>

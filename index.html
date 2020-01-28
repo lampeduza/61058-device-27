@@ -2,134 +2,128 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Девайс</title>
+  <title>Девайс: Главная</title>
   <!--
   <link rel="stylesheet" href="css/style.css">
-  -->
+-->
 </head>
 <body>
-  <div class="container">
-    <!-- header -->
-    <header class="page-header">
-      <!-- header logo -->
-      <a class="page-header__logo">
-        <img class="page-header__picture" src="" width="163" height="35" alt="Логотип сайта Девайс">
-      </a>
 
-      <div class="page-header__middle">
+  <!-- header -->
+  <header class="page-header">
+    <!-- header logo -->
+    <a class="page-header__logo">
+      <img class="page-header__picture" src="" width="163" height="35" alt="Логотип сайта Девайс">
+    </a>
 
-        <!-- search -->
-        <form class="page-header__form" action="url" method="post">
-          <label class="visually-hidden" for="search-form">Поле поиска</label>
-          <input class="page-header__form-search" id="search-form" type="search" name="search" placeholder="Поиск по сайту">
-          <button class="page-header__form-button" type="button">Найти</button>
-        </form>
+    <div class="page-header__middle">
 
-        <!-- links -->
-        <a class="page-header__login page-header__link" href="#">Войти</a>
-        <a class="page-header__compare page-header__link" href="#">Сравнить</a>
-        <a class="page-header__basket page-header__link" href="#">Корзина</a>
+      <!-- search -->
+      <form class="page-header__form" action="url" method="post">
+        <label class="visually-hidden" for="search-form">Поле поиска</label>
+        <input class="page-header__form-search" id="search-form" type="search" name="search" placeholder="Поиск по сайту">
+        <button class="page-header__form-button" type="button">Найти</button>
+      </form>
 
-      </div>
+      <!-- links -->
+      <a class="page-header__login page-header__link" href="#">Войти</a>
+      <a class="page-header__compare page-header__link" href="#">Сравнить</a>
+      <a class="page-header__basket page-header__link" href="#">Корзина</a>
 
-      <!-- main navigation -->
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <!-- class: positioning (относительно этого элемента будет позиционироваться подменю) -->
-          <li class="navigation__item navigation__item_positioning"><a class="navigation__link" href="#">Каталог товаров</a>
+    </div>
 
-            <!-- подменю -->
-            <ul class="navigation__list-column">
-              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Виртуальная реальность</a></li>
-              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Монопподы для селфи</a></li>
-              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Экшн-камеры</a></li>
-              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Фитнес браслеты</a></li>
-              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Умные часы</a></li>
-              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Квадракоптеры</a></li>
-            </ul>
+    <!-- main navigation -->
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <!-- class: positioning (относительно этого элемента будет позиционироваться подменю) -->
+        <li class="navigation__item navigation__item_positioning"><a class="navigation__link" href="#">Каталог товаров</a>
 
-          </li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Гарантия</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+          <!-- подменю -->
+          <ul class="navigation__list-column">
+            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Виртуальная реальность</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Монопподы для селфи</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Экшн-камеры</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Фитнес браслеты</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Умные часы</a></li>
+            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Квадракоптеры</a></li>
+          </ul>
+
+        </li>
+        <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#">Гарантия</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main class="page-main">
 
     <!-- information -->
     <section class="information">
-      <div class="container">
-        <!-- about -->
-        <div class="information__about">
-          <h2 class="information__about-title">О нас</h2>
-          <p class="information__about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p class="information__about-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+      <!-- about -->
+      <div class="information__about">
+        <h2 class="information__about-title">О нас</h2>
+        <p class="information__about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p class="information__about-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 
-          <ul class="information__partnership-list partnership">
-            <li class="partnership__item">Деловые Линии</li>
-            <li class="partnership__item">Автотрейдинг</li>
-            <li class="partnership__item">ЖелДорЭкспедиция</li>
-          </ul>
+        <ul class="information__partnership-list partnership">
+          <li class="partnership__item">Деловые Линии</li>
+          <li class="partnership__item">Автотрейдинг</li>
+          <li class="partnership__item">ЖелДорЭкспедиция</li>
+        </ul>
 
-          <a class="information__about-button button" href="#">Подробнее о нас</a>
+        <a class="information__about-button button" href="#">Подробнее о нас</a>
 
-        </div>
+      </div>
 
-        <!-- contacts -->
-        <div class="information__contacts">
-          <h2 class="information__contacts-title">Контакты</h2>
-          <p class="information__contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img class="information__contacts-image" src="" width="560" height="222" alt="город Санкт-Петербург, улица Строителей, дом 15">
+      <!-- contacts -->
+      <div class="information__contacts">
+        <h2 class="information__contacts-title">Контакты</h2>
+        <p class="information__contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <img class="information__contacts-image" src="" width="560" height="222" alt="город Санкт-Петербург, улица Строителей, дом 15">
 
-          <button class="information__contacts-button button" type="button">Напишите нам</button>
-        </div>
-      </div> <!-- end container -->
+        <button class="information__contacts-button button" type="button">Напишите нам</button>
+      </div>
     </section>
   </main>
   <!-- footer -->
   <footer class="footer">
-    <div class="container">
 
-      <!-- center column -->
-      <div class="footer__left">
-        <img class="footer__left-logo" src="" width="163" height="35" alt="Логотип сайта Девайс">
-        <p class="footer__left-text footer__text"></p>
-      </div>
+    <!-- center column -->
+    <div class="footer__left">
+      <img class="footer__left-logo" src="" width="163" height="35" alt="Логотип сайта Девайс">
+      <p class="footer__left-text footer__text">г. Москва, ул. Строителей, 15</p>
+    </div>
 
-      <!-- navigation -->
-      <div class="footer__center">
-        <ul class="footer__center-navigation">
-          <li class="footer__center-item"><a class="footer__center-link" href="#">Доставка</a></li>
-          <li class="footer__center-item"><a class="footer__center-link" href="#">Гарантия</a></li>
-          <li class="footer__center-item"><a class="footer__center-link" href="#">Контакты</a></li>
-        </ul>
+    <!-- navigation -->
+    <div class="footer__center">
+      <ul class="footer__center-navigation">
+        <li class="footer__center-item"><a class="footer__center-link" href="#">Доставка</a></li>
+        <li class="footer__center-item"><a class="footer__center-link" href="#">Гарантия</a></li>
+        <li class="footer__center-item"><a class="footer__center-link" href="#">Контакты</a></li>
+      </ul>
 
-        <ul class="footer__center-social social-list">
-          <li class="social-list__item"><a href="" class="social-list__link social-list__link_vk" aria-label="Фейсбук"></a></li>
-          <li class="social-list__item"><a href="" class="social-list__link social-list__link_inst" aria-label="Инстаграм"></a></li>
-          <li class="social-list__item"><a href="" class="social-list__link social-list__link_tw" aria-label="Твитер"></a></li>
-        </ul>
-      </div>
+      <ul class="footer__center-social social-list">
+        <li class="social-list__item"><a href="" class="social-list__link social-list__link_vk" aria-label="Фейсбук"></a></li>
+        <li class="social-list__item"><a href="" class="social-list__link social-list__link_inst" aria-label="Инстаграм"></a></li>
+        <li class="social-list__item"><a href="" class="social-list__link social-list__link_tw" aria-label="Твитер"></a></li>
+      </ul>
+    </div>
 
-      <!-- right column -->
-      <div class="footer__right">
-        <ul class="footer__right-navigation">
-          <li class="footer__right-item"><a href="" class="footer__right-link">Войти</a></li>
-          <li class="footer__right-item"><a href="" class="footer__right-link">Сравнить</a></li>
-          <li class="footer__right-item"><a href="" class="footer__right-link">Корзина</a></li>
-        </ul>
+    <!-- right column -->
+    <div class="footer__right">
+      <ul class="footer__right-navigation">
+        <li class="footer__right-item"><a href="" class="footer__right-link">Войти</a></li>
+        <li class="footer__right-item"><a href="" class="footer__right-link">Сравнить</a></li>
+        <li class="footer__right-item"><a href="" class="footer__right-link">Корзина</a></li>
+      </ul>
 
-        <p class="footer__text">Тел.: +7 (495) 495-95-95</p>
-        <a class="footer__right-logo" href="#" aria-label="Ссылка на профессиональный курс html и css, уровень 1">
-          <img class="footer__right-logo" src="" width="22" height="35" alt="Логотип сайта htmlacademy">
-        </a>
-      </div>
-    </div> <!-- end container -->
+      <p class="footer__text">Тел.: +7 (495) 495-95-95</p>
+      <a class="footer__right-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на профессиональный курс html и css, уровень 1">
+        <img class="footer__right-picture" src="" width="22" height="35" alt="Логотип сайта htmlacademy">
+      </a>
+    </div>
   </footer>
-
 </div>
 </body>
 </html>

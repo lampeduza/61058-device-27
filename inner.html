@@ -56,174 +56,172 @@
       </ul>
     </nav>
   </header>
-</div> <!-- end container -->
 
-<main class="inner-main">
+  <main class="inner-main">
 
-  <h1 class="inner__title">Моноподы для селфи</h1>
+    <h1 class="inner__title">Моноподы для селфи</h1>
 
-  <!-- breadscrumbs -->
-  <div class="breadscrumbs">
-    <ul class="breadscrumbs__list">
-      <li class="breadscrumbs__item"><a class="breadscrumbs__link" href="#">Главная</a></li>
-      <li class="breadscrumbs__item"><a class="breadscrumbs__link" href="#">Каталог товаров</a></li>
-      <li class="breadscrumbs__item breadscrumbs__item_active">Моноподы для селфи</li>
-    </ul>
-  </div>
-
-  <!-- filter -->
-  <section class="filter">
-    <h2 class="filter__title">Фильтр:</h2>
-
-    <form class="filter__form" action="url" method="post">
-
-      <!-- price -->
-      <fieldset class="filter__form-item">
-        <legend class="filter__form-title">Стоимость</legend>
-      </fieldset>
-
-      <!-- colour -->
-      <fieldset class="filter__form-item">
-        <legend class="filter__form-title">Цвет</legend>
-
-        <ul class="filter__form-list">
-          <li class="filter__form-option">
-            <input class="filter__form-input filter__form-checkbox" type="checkbox" name="black" id="filter-black" checked>
-            <label class="filter__form-label" for="filter-black">Черный</label>
-          </li>
-          <li class="filter__form-option">
-            <input class="filter__form-input filter__form-checkbox" type="checkbox" name="white" id="filter-white">
-            <label class="filter__form-label" for="filter-white">Белый</label>
-          </li>
-          <li class="filter__form-option">
-            <input class="filter__form-input filter__form-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
-            <label class="filter__form-label" for="filter-blue">Синий</label>
-          </li>
-          <li class="filter__form-option">
-            <input class="filter__form-input filter__form-checkbox" type="checkbox" name="red" id="filter-red" checked>
-            <label class="filter__form-label" for="filter-red">Красный</label>
-          </li>
-          <li class="filter__form-option">
-            <input class="filter__form-input filter__form-checkbox" type="checkbox" name="pink" id="filter-pink">
-            <label class="filter__form-label" for="filter-pink">Розовый</label>
-          </li>
-        </ul>
-      </fieldset>
-
-      <!-- bluetooth -->
-      <fieldset class="filter__form-item">
-        <legend class="filter__form-title">Bluetooth</legend>
-
-        <ul class="filter__form-list">
-          <li class="filter__form-option">
-            <input class="filter__form-input filter__form-radio" type="radio" name="variant" value="yes" id="yes">
-            <label class="filter__form-label" for="yes">Есть</label>
-          </li>
-          <li class="filter__form-option">
-            <input class="filter__form-input filter__form-radio" type="radio" name="variant" value="no" id="no">
-            <label class="filter__form-label" for="no">Нет</label>
-          </li>
-        </ul>
-
-        <button class="filter__form-button" type="button">Показать</button>
-      </fieldset>
-    </form>
-  </section>
-
-  <!-- products column-->
-  <section class="product-column">
-
-    <!-- sorting -->
-    <div class="product-column__sorting sorting">
-      <p class="sorting__title">Сортировка</p>
-
-      <ul class="sorting__list">
-        <li class="sorting__item sorting__item_active">По цене</li>
-        <li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
-        <li class="sorting__item"><a class="sorting__link" href="#">по популярности</a></li>
-        <li class="sorting__item"><a class="sorting__link" href="#" aria-label="По возрастанию цены"></a></li>
-        <li class="sorting__item"><a class="sorting__link" href="#" aria-label="По убыванию цены"></a></li>
+    <!-- breadscrumbs -->
+    <div class="breadscrumbs">
+      <ul class="breadscrumbs__list">
+        <li class="breadscrumbs__item"><a class="breadscrumbs__link" href="#">Главная</a></li>
+        <li class="breadscrumbs__item"><a class="breadscrumbs__link" href="#">Каталог товаров</a></li>
+        <li class="breadscrumbs__item breadscrumbs__item_active">Моноподы для селфи</li>
       </ul>
     </div>
 
-    <!-- catalog items -->
-    <section class="product-column__catalog catalog">
-      <h2 class="visually-hidden">Каталог продукции</h2>
+    <!-- filter -->
+    <section class="filter">
+      <h2 class="filter__title">Фильтр:</h2>
 
-      <ul class="catalog__list">
+      <form class="filter__form" action="url" method="post">
 
-        <!-- item 1 -->
-        <li class="catalog__item">
-          <img class="catalog__image" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Изображение любительской селфи-палки">
-          <a class="catalog__link" href="#">
-            <h3 class="catalog__title">Любительская селфи-палка</h3>
-            <span class="catalog__price">500 руб.</span>
-          </a>
+        <!-- price -->
+        <fieldset class="filter__form-item">
+          <legend class="filter__form-title">Стоимость</legend>
+        </fieldset>
 
-          <!-- при наведении будут выскакивать кнопки -->
-          <button class="catalog__button" type="button">В корзину</button>
-          <button class="catalog__button catalog__button-compare" type="button">Добавить к сравнению</button>
-        </li>
+        <!-- colour -->
+        <fieldset class="filter__form-item">
+          <legend class="filter__form-title">Цвет</legend>
 
-        <!-- item 2 -->
-        <li class="catalog__item">
-          <img class="catalog__image" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Изображение профессиональлной селфи-палки">
-          <a class="catalog__link" href="#">
-            <h3 class="catalog__title">Профессиональная селфи-палка</h3>
-            <span class="catalog__price">1 500 руб.</span>
-          </a>
+          <ul class="filter__form-list">
+            <li class="filter__form-option">
+              <input class="filter__form-input filter__form-checkbox" type="checkbox" name="black" id="filter-black" checked>
+              <label class="filter__form-label" for="filter-black">Черный</label>
+            </li>
+            <li class="filter__form-option">
+              <input class="filter__form-input filter__form-checkbox" type="checkbox" name="white" id="filter-white">
+              <label class="filter__form-label" for="filter-white">Белый</label>
+            </li>
+            <li class="filter__form-option">
+              <input class="filter__form-input filter__form-checkbox" type="checkbox" name="blue" id="filter-blue" checked>
+              <label class="filter__form-label" for="filter-blue">Синий</label>
+            </li>
+            <li class="filter__form-option">
+              <input class="filter__form-input filter__form-checkbox" type="checkbox" name="red" id="filter-red" checked>
+              <label class="filter__form-label" for="filter-red">Красный</label>
+            </li>
+            <li class="filter__form-option">
+              <input class="filter__form-input filter__form-checkbox" type="checkbox" name="pink" id="filter-pink">
+              <label class="filter__form-label" for="filter-pink">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
 
-          <!-- при наведении будут выскакивать кнопки -->
-          <button class="catalog__button" type="button">В корзину</button>
-          <button class="catalog__button catalog__button-compare" type="button">Добавить к сравнению</button>
-        </li>
+        <!-- bluetooth -->
+        <fieldset class="filter__form-item">
+          <legend class="filter__form-title">Bluetooth</legend>
 
-        <!-- item 3 -->
-        <li class="catalog__item">
-          <img class="catalog__image" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Изображение непотопляемой селфи-палки">
-          <a class="catalog__link" href="#">
-            <h3 class="catalog__title">Непотопляемая селфи-палка</h3>
-            <span class="catalog__price">2 500 руб.</span>
-          </a>
+          <ul class="filter__form-list">
+            <li class="filter__form-option">
+              <input class="filter__form-input filter__form-radio" type="radio" name="variant" value="yes" id="yes">
+              <label class="filter__form-label" for="yes">Есть</label>
+            </li>
+            <li class="filter__form-option">
+              <input class="filter__form-input filter__form-radio" type="radio" name="variant" value="no" id="no">
+              <label class="filter__form-label" for="no">Нет</label>
+            </li>
+          </ul>
 
-          <!-- при наведении будут выскакивать кнопки -->
-          <button class="catalog__button" type="button">В корзину</button>
-          <button class="catalog__button catalog__button-compare" type="button">Добавить к сравнению</button>
-        </li>
-
-        <!-- item 4 + добавил класс для метки new, для последнего товара-->
-        <li class="catalog__item catalog__item_new">
-          <img class="catalog__image" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Изображение селфи-палки «Следуй за мной»">
-          <a class="catalog__link" href="#">
-            <h3 class="catalog__title">Селфи-палка «Следуй за мной»</h3>
-            <span class="catalog__price">4 900 руб.</span>
-          </a>
-
-          <!-- при наведении будут выскакивать кнопки -->
-          <button class="catalog__button" type="button">В корзину</button>
-          <button class="catalog__button catalog__button-compare" type="button">Добавить к сравнению</button>
-        </li>
-      </ul>
+          <button class="filter__form-button" type="button">Показать</button>
+        </fieldset>
+      </form>
     </section>
 
-    <!-- pagination -->
-    <div class="pagination">
-      <ul class="pagination__list">
-        <li class="pagination__item"><a class="pagination__link" href="#">Назад</a></li>
-        <li class="pagination__item pagination__item_active">1</li>
-        <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-        <li class="pagination__item"><a class="pagination__link" href="#">Вперед</a></li>
-      </ul>
-    </div>
-  </section>
-</div>
-</main>
+    <!-- products column-->
+    <section class="product-column">
+      <h2 class="visually-hidden">Колонка с каталогом товаров</h2>
+      <!-- sorting -->
+      <div class="product-column__sorting sorting">
+        <p class="sorting__title">Сортировка</p>
 
-<!-- footer -->
-<footer class="footer">
+        <ul class="sorting__list">
+          <li class="sorting__item sorting__item_active">По цене</li>
+          <li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
+          <li class="sorting__item"><a class="sorting__link" href="#">по популярности</a></li>
+          <li class="sorting__item"><a class="sorting__link" href="#" aria-label="По возрастанию цены"></a></li>
+          <li class="sorting__item"><a class="sorting__link" href="#" aria-label="По убыванию цены"></a></li>
+        </ul>
+      </div>
 
-  <!-- top row -->
+      <!-- catalog items -->
+      <section class="product-column__catalog catalog">
+        <h2 class="visually-hidden">Каталог продукции</h2>
+
+        <ul class="catalog__list">
+
+          <!-- item 1 -->
+          <li class="catalog__item">
+            <img class="catalog__image" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Изображение любительской селфи-палки">
+            <a class="catalog__link" href="#">
+              <h3 class="catalog__title">Любительская селфи-палка</h3>
+              <span class="catalog__price">500 руб.</span>
+            </a>
+
+            <!-- при наведении будут выскакивать кнопки -->
+            <button class="catalog__button" type="button">В корзину</button>
+            <button class="catalog__button catalog__button-compare" type="button">Добавить к сравнению</button>
+          </li>
+
+          <!-- item 2 -->
+          <li class="catalog__item">
+            <img class="catalog__image" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Изображение профессиональлной селфи-палки">
+            <a class="catalog__link" href="#">
+              <h3 class="catalog__title">Профессиональная селфи-палка</h3>
+              <span class="catalog__price">1 500 руб.</span>
+            </a>
+
+            <!-- при наведении будут выскакивать кнопки -->
+            <button class="catalog__button" type="button">В корзину</button>
+            <button class="catalog__button catalog__button-compare" type="button">Добавить к сравнению</button>
+          </li>
+
+          <!-- item 3 -->
+          <li class="catalog__item">
+            <img class="catalog__image" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Изображение непотопляемой селфи-палки">
+            <a class="catalog__link" href="#">
+              <h3 class="catalog__title">Непотопляемая селфи-палка</h3>
+              <span class="catalog__price">2 500 руб.</span>
+            </a>
+
+            <!-- при наведении будут выскакивать кнопки -->
+            <button class="catalog__button" type="button">В корзину</button>
+            <button class="catalog__button catalog__button-compare" type="button">Добавить к сравнению</button>
+          </li>
+
+          <!-- item 4 + добавил класс для метки new, для последнего товара-->
+          <li class="catalog__item catalog__item_new">
+            <img class="catalog__image" src="https://via.placeholder.com/360x380" width="360" height="380" alt="Изображение селфи-палки «Следуй за мной»">
+            <a class="catalog__link" href="#">
+              <h3 class="catalog__title">Селфи-палка «Следуй за мной»</h3>
+              <span class="catalog__price">4 900 руб.</span>
+            </a>
+
+            <!-- при наведении будут выскакивать кнопки -->
+            <button class="catalog__button" type="button">В корзину</button>
+            <button class="catalog__button catalog__button-compare" type="button">Добавить к сравнению</button>
+          </li>
+        </ul>
+      </section>
+
+      <!-- pagination -->
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item"><a class="pagination__link" href="#">Назад</a></li>
+          <li class="pagination__item pagination__item_active">1</li>
+          <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+          <li class="pagination__item"><a class="pagination__link" href="#">Вперед</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+
+    <!-- top row -->
     <div class="footer__top-row">
       <a class="footer__top-logo" href="index.html">
         <img class="footer__top-picture" src="https://via.placeholder.com/163x35" width="163" height="35" alt="Логотип сайта Девайс">
@@ -234,7 +232,7 @@
         <li class="footer__top-item"><a href="#" class="footer__top-link">Выйти</a></li>
         <li class="footer__top-item"><a href="#" class="footer__top-link">Сравнить</a></li>
         <li class="footer__top-item"><a href="#" class="footer__top-link">Корзина</a></li>
-      </u>
+      </ul>
     </div>
 
     <!-- middle row -->
@@ -252,19 +250,16 @@
 
     <!-- bottom row -->
     <div class="footer__bottom-row">
-       <ul class="footer__bottom-social social-list">
-        <li class="social-list__item"><a href="" class="social-list__link social-list__link_vk" aria-label="Фейсбук"></a></li>
-        <li class="social-list__item"><a href="" class="social-list__link social-list__link_inst" aria-label="Инстаграм"></a></li>
-        <li class="social-list__item"><a href="" class="social-list__link social-list__link_tw" aria-label="Твитер"></a></li>
-      </ul>
+     <ul class="footer__bottom-social social-list">
+      <li class="social-list__item"><a href="" class="social-list__link social-list__link_vk" aria-label="Фейсбук"></a></li>
+      <li class="social-list__item"><a href="" class="social-list__link social-list__link_inst" aria-label="Инстаграм"></a></li>
+      <li class="social-list__item"><a href="" class="social-list__link social-list__link_tw" aria-label="Твитер"></a></li>
+    </ul>
 
-      <a class="footer__bottom-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на профессиональный курс html и css, уровень 1">
-        <img class="footer__bottom-picture" src="https://via.placeholder.com/22x35" width="22" height="35" alt="Логотип сайта htmlacademy">
-      </a>
-    </div>
+    <a class="footer__bottom-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на профессиональный курс html и css, уровень 1">
+      <img class="footer__bottom-picture" src="https://via.placeholder.com/22x35" width="22" height="35" alt="Логотип сайта htmlacademy">
+    </a>
+  </div>
 </footer>
-
-</main>
-</div>
 </body>
 </html>

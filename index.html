@@ -26,10 +26,14 @@
       </form>
 
       <!-- links -->
-      <a class="header__login header__link" href="#">Войти</a>
-      <a class="header__compare header__link" href="#">Сравнить</a>
-      <a class="header__basket header__link" href="#">Корзина</a>
+      <ul class="header__list-login login">
+        <li class="login__item"><a class="login__link header__link" href="#">Войти</a></li>
+      </ul>
 
+      <ul class="header__list-links links">
+        <li class="links__item"><a class="links__compare header__link" href="#">Сравнить</a>
+        <li class="links__item"><a class="links__basket header__link" href="#">Корзина</a>
+      </ul>
     </div>
 
     <!-- main navigation -->
@@ -178,26 +182,32 @@
       <h2 class="visually-hidden">Услуги</h2>
 
       <ul class="services__list">
-        <li class="services__item">
-          <button class="services__button" type="button">Доставка</button>
+        <li class="services__item"><button class="services__button" type="button">Доставка</button></li>
+        <li class="services__item"><button class="services__button" type="button">Гарантия</button></li>
+        <li class="services__item"><button class="services__button" type="button">Кредит</button></li>
+      </ul>
 
-          <h3 class="services__title">Доставка</h3>
-          <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          <img class="" src="https://via.placeholder.com/136x164" width="136" height="164" alt="Картинка доставки">
+      <ul class="services__slider-list">
+
+        <!-- slide 3 -->
+        <li class="services__slider-item">
+          <h3 class="services__slider-title">Доставка</h3>
+          <p class="services__slider-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <img class="services__slider-image" src="https://via.placeholder.com/136x164" width="136" height="164" alt="Картинка доставки">
         </li>
-        <li class="services__item">
-          <button class="services__button" type="button">Гарантия</button>
 
-          <h3 class="services__title">Гарантия</h3>
-          <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          <img class="" src="https://via.placeholder.com/171x194" width="171" height="194" alt="Картинка гарантии">
+        <!-- slide 2 -->
+        <li class="services__slider-item">
+          <h3 class="services__slider-title">Гарантия</h3>
+          <p class="services__slider-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+          <img class="services__slider-image" src="https://via.placeholder.com/171x194" width="171" height="194" alt="Картинка гарантии">
         </li>
-        <li class="services__item">
-          <button class="services__button" type="button">Кредит</button>
 
-          <h3 class="services__title">Кредит</h3>
-          <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-          <img class="" src="https://via.placeholder.com/156x186" width="156" height="186" alt="Картинка кредита">
+        <!-- slide 3 -->
+        <li class="services__slider-item">
+          <h3 class="services__slider-title">Кредит</h3>
+          <p class="services__slider-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+          <img class="services__slider-image" src="https://via.placeholder.com/156x186" width="156" height="186" alt="Картинка кредита">
         </li>
       </ul>
     </section>
@@ -244,7 +254,9 @@
       <div class="information__contacts">
         <h2 class="information__contacts-title">Контакты</h2>
         <p class="information__contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img class="information__contacts-image" src="https://via.placeholder.com/560x222" width="560" height="222" alt="город Санкт-Петербург, улица Строителей, дом 15">
+        <a class="information__contacts-link" href="#">
+          <img class="information__contacts-image" src="https://via.placeholder.com/560x222" width="560" height="222" alt="город Санкт-Петербург, улица Строителей, дом 15">
+        </a>
 
         <button class="information__contacts-button button" type="button">Напишите нам</button>
       </div>
@@ -281,40 +293,40 @@
 
     <!-- bottom row -->
     <div class="footer__bottom-row">
-       <ul class="footer__bottom-social social-list">
-        <li class="social-list__item"><a href="#" class="social-list__link social-list__link_vk" aria-label="Фейсбук"></a></li>
-        <li class="social-list__item"><a href="#" class="social-list__link social-list__link_inst" aria-label="Инстаграм"></a></li>
-        <li class="social-list__item"><a href="#" class="social-list__link social-list__link_tw" aria-label="Твитер"></a></li>
-      </ul>
+     <ul class="footer__bottom-social social-list">
+      <li class="social-list__item"><a href="#" class="social-list__link social-list__link_vk" aria-label="Фейсбук"></a></li>
+      <li class="social-list__item"><a href="#" class="social-list__link social-list__link_inst" aria-label="Инстаграм"></a></li>
+      <li class="social-list__item"><a href="#" class="social-list__link social-list__link_tw" aria-label="Твитер"></a></li>
+    </ul>
 
-      <a class="footer__bottom-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на профессиональный курс html и css, уровень 1">
-        <img class="footer__bottom-picture" src="https://via.placeholder.com/22x35" width="22" height="35" alt="Логотип сайта htmlacademy">
-      </a>
-    </div>
-  </footer>
+    <a class="footer__bottom-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на профессиональный курс html и css, уровень 1">
+      <img class="footer__bottom-picture" src="https://via.placeholder.com/22x35" width="22" height="35" alt="Логотип сайта htmlacademy">
+    </a>
+  </div>
+</footer>
 
-  <!-- modal feedback -->
-  <section class="modal modal-feedback">
-    <h2 class="visually-hidden">Напишите нам</h2>
+<!-- modal feedback -->
+<section class="modal modal-feedback">
+  <h2 class="visually-hidden">Напишите нам</h2>
 
-    <label class="modal-feedback__label" for="name-field">Ваше имя:</label>
-    <input class="modal-feedback__input" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+  <label class="modal-feedback__label" for="name-field">Ваше имя:</label>
+  <input class="modal-feedback__input" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
 
-    <label class="modal-feedback__label" for="email-field">Ваш e-mail:</label>
-    <input class="modal-feedback__input" type="text" name="email" id="email-field" placeholder="email@example.com">
+  <label class="modal-feedback__label" for="email-field">Ваш e-mail:</label>
+  <input class="modal-feedback__input" type="text" name="email" id="email-field" placeholder="email@example.com">
 
-    <label class="modal-feedback__label" for="text-area-field">Текст письма:</label>
-    <textarea class="modal-feedback__text-area" name="text-field" id="text-area-field">В свободной форме</textarea>
+  <label class="modal-feedback__label" for="text-area-field">Текст письма:</label>
+  <textarea class="modal-feedback__text-area" name="text-field" id="text-area-field">В свободной форме</textarea>
 
-    <button class="modal-feedback__button modal-feedback__button_send" type="button">Отправить</button>
-    <button class="modal-feedback__close modal__close" aria-label="Закрыть форму"></button>
-  </section>
+  <button class="modal-feedback__button modal-feedback__button_send" type="button">Отправить</button>
+  <button class="modal-feedback__close modal__close" aria-label="Закрыть форму"></button>
+</section>
 
-  <!-- modal map -->
-  <section class="modal modal-map">
-    <h2 class="˜visually-hidden">Как до нас добраться</h2>
-    <img class="modal-map__image" src="https://via.placeholder.com/960x559" width="960" height="559" alt="Изображение карты и отметка на карте нашего местоположения">
-    <button class="modal-map__close modal__close" aria-label="Закрыть карту"></button>
-  </section>
+<!-- modal map -->
+<section class="modal modal-map">
+  <h2 class="˜visually-hidden">Как до нас добраться</h2>
+  <img class="modal-map__image" src="https://via.placeholder.com/960x559" width="960" height="559" alt="Изображение карты и отметка на карте нашего местоположения">
+  <button class="modal-map__close modal__close" aria-label="Закрыть карту"></button>
+</section>
 </body>
 </html>

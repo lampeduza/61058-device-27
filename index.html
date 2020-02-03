@@ -12,7 +12,7 @@
     <!-- header logo -->
     <a class="header__logo">
       <svg class="header__logo-picture" xmlns="http://www.w3.org/2000/svg" width="163" height="35">
-        <path d="M-.151.702v33.6h13.532a15.72 15.72 0 0011.72-4.824 16.458 16.458 0 004.712-11.976 16.458 16.458 0 00-4.712-11.976A15.723 15.723 0 0013.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 016.5 2.568 9.407 9.407 0 012.489 6.84 9.406 9.406 0 01-2.489 6.84 8.642 8.642 0 01-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 006.041-5.688l-6.67-3.84a7.482 7.482 0 01-3.165 3.024 9.87 9.87 0 01-4.664 1.1 9.595 9.595 0 01-7.177-2.736 9.909 9.909 0 01-2.682-7.248 9.909 9.909 0 012.682-7.248 9.595 9.595 0 017.177-2.736 9.897 9.897 0 014.639 1.08 7.592 7.592 0 013.19 3.048l6.67-3.84a15.873 15.873 0 00-6.09-5.688 17.42 17.42 0 00-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 008.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" data-name="-e-logo"fill-rule="evenodd"/>
+        <path d="M-.151.702v33.6h13.532a15.72 15.72 0 0011.72-4.824 16.458 16.458 0 004.712-11.976 16.458 16.458 0 00-4.712-11.976A15.723 15.723 0 0013.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 016.5 2.568 9.407 9.407 0 012.489 6.84 9.406 9.406 0 01-2.489 6.84 8.642 8.642 0 01-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 006.041-5.688l-6.67-3.84a7.482 7.482 0 01-3.165 3.024 9.87 9.87 0 01-4.664 1.1 9.595 9.595 0 01-7.177-2.736 9.909 9.909 0 01-2.682-7.248 9.909 9.909 0 012.682-7.248 9.595 9.595 0 017.177-2.736 9.897 9.897 0 014.639 1.08 7.592 7.592 0 013.19 3.048l6.67-3.84a15.873 15.873 0 00-6.09-5.688 17.42 17.42 0 00-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 008.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" data-name="-e-logo" fill-rule="evenodd"/>
       </svg>
     </a>
 
@@ -20,7 +20,7 @@
 
       <!-- search -->
       <form class="header__form" action="https://echo.htmlacademy.ru" method="post">
-        <button class="header__btn" type="button">
+        <button class="header__btn" type="button" aria-label="Поиск по сайту">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
             <path d="M15.7 14.3l-3.104-3.104A6.979 6.979 0 0014 7a7 7 0 10-7 7 6.963 6.963 0 004.193-1.404L14.3 15.7c.185.184.38.3.7.3a1 1 0 001-1 .93.93 0 00-.3-.7zM2 7c0-2.762 2.238-5 5-5s5 2.238 5 5-2.238 5-5 5-5-2.238-5-5z"/>
           </svg>
@@ -71,10 +71,10 @@
         <!-- slider -->
         <section class="slider">
 
-          <ul class="slider__button-list">
-            <li class="slider__button-item"><button class="slider__button slider__button_active" type="button" aria-label="Слайд 1">Доставка</button></li>
-            <li class="slider__button-item"><button class="slider__button" type="button" aria-label="Слайд 2">Гарантия</button></li>
-            <li class="slider__button-item"><button class="slider__Button" type="button" aria-label="Слайд 3">Кредит</button></li>
+          <ul class="slider__controls">
+            <li class="slider__controls-item"><button class="slider__controls-button slider__controls-button_active" type="button" aria-label="Слайд 1">Доставка</button></li>
+            <li class="slider__controls-item"><button class="slider__controls-button" type="button" aria-label="Слайд 2">Гарантия</button></li>
+            <li class="slider__controls-item"><button class="slider__controls-Button" type="button" aria-label="Слайд 3">Кредит</button></li>
           </ul>
 
           <ol class="slider__list">
@@ -141,7 +141,7 @@
         <!-- categories -->
         <section class="categories">
           <h2 class="visually-hidden">Категории товаров</h2>
-          img/
+
           <ul class="categories__list">
             <li class="categories__item">
               <a class="categories__link" href="#">
@@ -263,7 +263,7 @@
               <img class="information__contacts-image" src="img/map.png" width="560" height="222" alt="город Санкт-Петербург, улица Строителей, дом 15">
             </a>
 
-            <button class="information__contacts-button button" type="button">Напишите нам</button>
+            <a class="information__contacts-link button" href="#">Напишите нам</a>
           </div>
         </section>
       </main>
@@ -274,7 +274,7 @@
         <div class="footer__top-row">
           <a class="footer__top-logo" href="index.html">
             <svg class="footer__top-picture" xmlns="http://www.w3.org/2000/svg" width="163" height="35">
-              <path d="M-.151.702v33.6h13.532a15.72 15.72 0 0011.72-4.824 16.458 16.458 0 004.712-11.976 16.458 16.458 0 00-4.712-11.976A15.723 15.723 0 0013.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 016.5 2.568 9.407 9.407 0 012.489 6.84 9.406 9.406 0 01-2.489 6.84 8.642 8.642 0 01-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 006.041-5.688l-6.67-3.84a7.482 7.482 0 01-3.165 3.024 9.87 9.87 0 01-4.664 1.1 9.595 9.595 0 01-7.177-2.736 9.909 9.909 0 01-2.682-7.248 9.909 9.909 0 012.682-7.248 9.595 9.595 0 017.177-2.736 9.897 9.897 0 014.639 1.08 7.592 7.592 0 013.19 3.048l6.67-3.84a15.873 15.873 0 00-6.09-5.688 17.42 17.42 0 00-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 008.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" data-name="-e-logo"fill-rule="evenodd"/>
+              <path d="M-.151.702v33.6h13.532a15.72 15.72 0 0011.72-4.824 16.458 16.458 0 004.712-11.976 16.458 16.458 0 00-4.712-11.976A15.723 15.723 0 0013.381.702H-.151zM7.582 26.91V8.091h5.8a8.646 8.646 0 016.5 2.568 9.407 9.407 0 012.489 6.84 9.406 9.406 0 01-2.489 6.84 8.642 8.642 0 01-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3H42.378V8.091h13.291V.702H34.645v33.6H55.91V26.91H42.378v-5.952zm36.343 13.344L89.744.702h-8.458l-7.491 24.72L66.304.702h-8.457l11.019 33.6h9.859zm14.4 0h7.733V.702h-7.733v33.6zm38.615-1.416a15.506 15.506 0 006.041-5.688l-6.67-3.84a7.482 7.482 0 01-3.165 3.024 9.87 9.87 0 01-4.664 1.1 9.595 9.595 0 01-7.177-2.736 9.909 9.909 0 01-2.682-7.248 9.909 9.909 0 012.682-7.248 9.595 9.595 0 017.177-2.736 9.897 9.897 0 014.639 1.08 7.592 7.592 0 013.19 3.048l6.67-3.84a15.873 15.873 0 00-6.09-5.688 17.42 17.42 0 00-8.409-2.088c-9.779-.272-17.797 7.691-17.591 17.472-.208 9.781 7.809 17.747 17.588 17.476a17.52 17.52 0 008.458-2.088zm17.881-11.928h12.082v-7.3h-12.085V8.091h13.29V.702h-21.023v33.6h21.265V26.91h-13.532v-5.952z" data-name="-e-logo" fill-rule="evenodd"/>
             </svg>
           </a>
           <!-- links -->
@@ -298,7 +298,7 @@
                 <li class="footer__middle-item"><a class="footer__middle-link" href="#">Контакты</a></li>
               </ul>
 
-              <p class="footer__middle-text">Тел.: +7 (495) 495-95-95</p>
+              <a class="footer__middle-text" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
             </div>
 
             <!-- bottom row -->
@@ -341,6 +341,8 @@
         <section class="modal modal-feedback">
           <h2 class="visually-hidden">Напишите нам</h2>
 
+          <form class="modal-feedback__form" action="" method="post">
+
           <label class="modal-feedback__label" for="name-field">Ваше имя:</label>
           <input class="modal-feedback__input" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
 
@@ -350,8 +352,10 @@
           <label class="modal-feedback__label" for="text-area-field">Текст письма:</label>
           <textarea class="modal-feedback__text-area" name="text-field" id="text-area-field">В свободной форме</textarea>
 
-          <button class="modal-feedback__button modal-feedback__button_send" type="button">Отправить</button>
+          <button class="modal-feedback__button modal-feedback__button_send" type="submit">Отправить</button>
           <button class="modal-feedback__close modal__close" aria-label="Закрыть форму"></button>
+
+        </form>
         </section>
 
         <!-- modal map -->

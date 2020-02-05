@@ -19,7 +19,7 @@
     <div class="header__middle">
 
       <!-- search -->
-      <form class="header__form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="header__form" action="https://echo.htmlacademy.ru" method="get">
         <button class="header__btn" type="button" aria-label="Поиск по сайту"></button>
         <label class="visually-hidden" for="search-form">Поле поиска</label>
         <input class="header__form-search" id="search-form" type="search" name="search" placeholder="Поиск по сайту">
@@ -65,7 +65,7 @@
         <h1 class="main__title">Главная страница сайта Девайс</h1>
 
         <!-- slider -->
-        <section class="slider">
+        <section class="slider" tabindex="0">
 
           <ul class="slider__controls">
             <li class="slider__controls-item"><button class="slider__controls-button slider__controls-button_active" type="button" aria-label="Слайд 1"></button></li>
@@ -76,7 +76,7 @@
           <ol class="slider__list">
 
             <!-- slide 1 -->
-            <li class="slider__item slider__item_active">
+            <li class="slider__item slider__item_active" tabindex="0">
               <img class="slider__image" src="img/slide-1.png" width="384" height="486" alt="">
               <h2 class="slider__title">Делай селфи, как Бен Стиллер!</h2>
               <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -97,7 +97,7 @@
             </li>
 
             <!-- slide 2 -->
-            <li class="slider__item">
+            <li class="slider__item" tabindex="0">
               <img class="slider__image" src="img/slide-2.png" width="345" height="485" alt="">
               <h2 class="slider__title">Худеем правильно!</h2>
               <p class="slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -114,7 +114,7 @@
             </li>
 
             <!-- slide 3 -->
-            <li class="slider__item">
+            <li class="slider__item" tabindex="0">
               <img class="slider__image" src="img/slide-3.png" width="526" height="334" alt="">
               <h2 class="slider__title">Пархает как бабочка, жалит как пчела!</h2>
               <p class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -191,21 +191,21 @@
           <ul class="services__slider-list">
 
             <!-- slide 3 -->
-            <li class="services__slider-item">
+            <li class="services__slider-item" tabindex="0">
               <h3 class="services__slider-title">Доставка</h3>
               <p class="services__slider-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               <img class="services__slider-image" src="img/delivery.svg" width="136" height="164" alt="Картинка доставки">
             </li>
 
             <!-- slide 2 -->
-            <li class="services__slider-item">
+            <li class="services__slider-item" tabindex="0">
               <h3 class="services__slider-title">Гарантия</h3>
               <p class="services__slider-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
               <img class="services__slider-image" src="img/credit.svg" width="171" height="194" alt="Картинка гарантии">
             </li>
 
             <!-- slide 3 -->
-            <li class="services__slider-item">
+            <li class="services__slider-item" tabindex="0">
               <h3 class="services__slider-title">Кредит</h3>
               <p class="services__slider-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
               <img class="services__slider-image" src="img/warranty.svg" width="156" height="186" alt="Картинка кредита">
@@ -218,16 +218,16 @@
           <h2 class="visually-hidden">Брэнды</h2>
 
           <ul class="brands__list">
-            <li class="brands__item">
+            <li class="brands__item" tabindex="0">
               <img class="brands__images" src="img/brand-1.png" width="260" height="100" alt="Изображение логотипа частной компании DJI">
             </li>
-            <li class="brands__item">
+            <li class="brands__item" tabindex="0">
               <img class="brands__images" src="img/brand-2.png" width="260" height="100" alt="Изображение логотипа компании SP GADGETS по производству и продаже аксессуаров">
             </li>
-            <li class="brands__item">
+            <li class="brands__item" tabindex="0">
               <img class="brands__images" src="img/brand-3.png" width="260" height="100" alt="Изображение логотипа американской компании GoPro, производящая экшен-камеры и аксессуары к ним">
             </li>
-            <li class="brands__item">
+            <li class="brands__item" tabindex="0">
               <img class="brands__images" src="img/brand-4.png" width="260" height="100" alt="Изображение логотипа Vive, занимающаяся продажей оборудования виртуальной реальности">
             </li>
           </ul>
@@ -339,25 +339,28 @@
 
           <form class="modal-feedback__form" action="" method="post">
 
-          <label class="modal-feedback__label" for="name-field">Ваше имя:</label>
-          <input class="modal-feedback__input" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+            <div class="modal-feedback__row">
+              <label class="modal-feedback__label" for="name-field">Ваше имя:</label>
+              <input class="modal-feedback__input" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
 
-          <label class="modal-feedback__label" for="email-field">Ваш e-mail:</label>
-          <input class="modal-feedback__input" type="text" name="email" id="email-field" placeholder="email@example.com">
+              <label class="modal-feedback__label" for="email-field">Ваш e-mail:</label>
+              <input class="modal-feedback__input" type="text" name="email" id="email-field" placeholder="email@example.com">
+            </div>
 
-          <label class="modal-feedback__label" for="text-area-field">Текст письма:</label>
-          <textarea class="modal-feedback__text-area" name="text-field" id="text-area-field">В свободной форме</textarea>
+            <label class="modal-feedback__label" for="area-field">Текст письма:</label>
+            <textarea class="modal-feedback__area" name="text-field" id="area-field">В свободной форме</textarea>
 
-          <button class="modal-feedback__button modal-feedback__button_send" type="submit">Отправить</button>
-          <button class="modal-feedback__close modal__close" aria-label="Закрыть форму"></button>
-
-        </form>
+            <button class="modal-feedback__button modal-feedback__button_send" type="submit">Отправить</button>
+            <button class="modal-feedback__close modal__close" aria-label="Закрыть форму"></button>
+          </form>
         </section>
 
         <!-- modal map -->
         <section class="modal modal-map">
           <h2 class="˜visually-hidden">Как до нас добраться</h2>
-          <img class="modal-map__image" src="img/map-big.jpg" width="960" height="559" alt="Изображение карты и отметка на карте нашего местоположения">
+          <a class="modal-map__link" href="#">
+            <img class="modal-map__image" src="img/map-big.jpg" width="960" height="559" alt="Изображение карты и отметка на карте нашего местоположения">
+          </a>
           <button class="modal-map__close modal__close" aria-label="Закрыть карту"></button>
         </section>
       </body>

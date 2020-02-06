@@ -83,8 +83,24 @@
           <form class="filter__form" action="url" method="post">
 
             <!-- price -->
-            <fieldset class="filter__form-item">
+            <fieldset class="filter__form-item filter__form-item_price">
               <legend class="filter__form-title">Стоимость</legend>
+
+              <div class="filter__form-range-controls range">
+                <div class="range__scale">
+                  <div class="range__scale-bar"></div>
+                </div>
+                  <button class="range__toggle range__toggle_min" type="button"></button>
+                  <button class="range__toggle range__toggle_max" type="button"></button>
+              </div>
+
+              <div class="filter__form-price-controls price-controls">
+                <label class="price-controls__min" aria-label="Минимальной значение цены"></label>
+                <input class="price-controls__range-input" type="text" placeholder="От 0">
+
+                <label class="price-controls__max" aria-label="Максимальное значение цены"></label>
+                <input class="price-controls__range-input" type="text" placeholder="До 5000">
+              </div>
             </fieldset>
 
             <!-- colour -->

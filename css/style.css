@@ -103,6 +103,11 @@ a {
 
 /* БАЗОВАЯ СТИЛИЗАЦИЯ */
 
+/* Шапка */
+.header {
+  background-color: rgba(240, 197, 46, 0.5)
+}
+
 /* Состояния для Логотипа в шапке */
 .header__logo-picture:hover path {
   fill: rgba(0, 0, 0, 0.6);
@@ -132,8 +137,7 @@ a {
 }
 
 /* Стилизация списков управления */
-.header__login-list,
-.header__links-list {
+.header__list {
   list-style: none;
 }
 
@@ -141,6 +145,10 @@ a {
 .header__link {
   color: #000;
   letter-spacing: 0.15px;
+}
+
+.header__list-link_logout {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* Навигация (списки меню и подменю) */
@@ -305,21 +313,18 @@ a {
 }
 
 /* Список управляющих элементов */
-.footer__list-login,
-.footer__list-links {
+.footer__list {
   list-style: none;
 }
 
 /* Ссылки управляющих элементов */
-.login__link,
-.links__compare,
-.links__basket,
-.user__link {
+.footer__link {
   color: rgba(255, 255, 255, 0.7);
   line-height: 36px;
+  letter-spacing: 0.15px;
 }
 
-.user__logout {
+.footer__list-link_logout {
   color: rgba(255, 255, 255, 0.3);
 }
 

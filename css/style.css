@@ -1,0 +1,550 @@
+/* Open Sans Light */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+       url('../fonts/web/opensanslight.woff2') format('woff2'),
+       url('../fonts/web/opensanslight.woff') format('woff');
+}
+
+/* Open Sans Regular */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+       url('../fonts/web/opensans.woff2') format('woff2'),
+       url('../fonts/web/opensans.woff') format('woff');
+}
+
+/* Gilroy light */
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+       url('../fonts/web/gilroylight.woff2') format('woff2'),
+       url('../fonts/web/gilroylight.woff') format('woff');
+}
+
+/* Gilroy ExtraBold */
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src:
+       url('../fonts/web/gilroyextrabold.woff2') format('woff2'),
+       url('../fonts/web/gilroyextrabold.woff') format('woff');
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+/* Стили для кнопок */
+.button {
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+/* БАЗОВАЯ СТИЛИЗАЦИЯ */
+
+/* Состояния для Логотипа в шапке */
+.header__logo-picture:hover path {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.header__logo-picture:active path,
+.header__logo-picture:focus path {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+/* Стилизация placeholder для поля поиска */
+.header__form-search::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* поле поиска */
+.header__form-search {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.header__form-button {
+  font-size: inherit;
+  color: inherit;
+  font-weight: inherit;
+  letter-spacing: 0.15px;
+}
+
+/* Стилизация списков управления */
+.header__login-list,
+.header__links-list {
+  list-style: none;
+}
+
+/* Стилизация ссылок управления */
+.header__link {
+  color: #000;
+  letter-spacing: 0.15px;
+}
+
+/* Навигация (списки меню и подменю) */
+.navigation__list,
+.navigation__list-column {
+  list-style: none;
+}
+
+/* Ссылки меню */
+.navigation__link {
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+
+/* Ссылки подменю */
+.navigation__list-link {
+  color: inherit;
+  letter-spacing: 0.15px;
+  line-height: 36px;
+}
+
+/* Главная страница */
+
+/* Слайдер */
+/* Список слайдов */
+.slider__list {
+  list-style: none;
+}
+
+/* Заголовок слайдов */
+.slider__title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: 0.47px;
+}
+
+.slider__text {
+  color: #464646;
+  letter-spacing: 0.15px;
+}
+
+/* Таблица статистики */
+.table__heading {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 0.36px;
+}
+
+.table__info {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  color: #464646;
+}
+
+/* Категории товаров */
+/* Список категорий */
+.categories__list {
+  list-style: none;
+}
+
+/* Заголовок категорий */
+.categories__title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000;
+}
+
+/* Услуги */
+
+.services__list,
+.services__slider-list {
+  list-style: none;
+}
+
+.services__button {
+  /* тут будут какие - то стили */
+}
+
+.services__button:hover {
+  color: #f0c52e;
+  background-color: #000;
+}
+
+.services__slider-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+}
+
+.services__slider-text {
+  color: #464646;
+  letter-spacing: 0.15px;
+}
+
+/* БРЭНДЫ
+- - - - - - место для стилей БРЭНДЫ - - - - - - - */
+
+
+/* Информация */
+.information__title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+}
+
+/* Текст раздела с информацией */
+.information__text {
+  color: #464646;
+}
+
+/* Список партнеров */
+.information__partnership-list {
+  list-style: none;
+}
+
+.partnership__item {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 40px;
+}
+
+/* footer */
+.footer {
+  background-color: #464646;
+}
+
+/* Логотип */
+.footer__top-picture {
+  fill: #ffc600;
+}
+
+/* Состояния для Логотипа в подвале */
+.footer__top-picture path {
+  fill: #ffc600;
+}
+
+.footer__top-picture:hover path {
+  opacity: 0.6;
+}
+
+.footer__top-picture:active path,
+.footer__top-picture:focus path {
+  opacity: 0.3;
+}
+
+/* Список управляющих элементов */
+.footer__list-login,
+.footer__list-links {
+  list-style: none;
+}
+
+/* Ссылки управляющих элементов */
+.login__link,
+.links__compare,
+.links__basket,
+.user__link {
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 36px;
+}
+
+.user__logout {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer__text {
+  color: #fff;
+}
+
+/* Навигационный список */
+.footer__middle-list {
+  list-style: none;
+}
+
+.footer__middle-link {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Список соц. сетей */
+.footer__bottom-social {
+  list-style: none;
+}
+
+/* Состояния для  соц. сетей */
+.social__list-svg path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.social__list-svg:hover path {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.social__list-svg:active path,
+.social__list-svg:focus path {
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+
+
+/* Модальное окно с обратным отзывом */
+.modal-feedback {
+  background-color: #fff;
+}
+
+.modal-feedback__text {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.modal-feedback__input::placeholder,
+.modal-feedback__area {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.modal-feedback__input {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(70, 70, 70, 0.4);
+}
+
+
+/* Заголовок внутренней страницы главного контента */
+.inner__title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+}
+
+/* Хлебные крошки */
+.breadscrumbs__list {
+  list-style: none;
+}
+
+.breadscrumbs__link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Фильтр */
+
+.filter__title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.filter__form-title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+.filter__form-label {
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+}
+
+.filter__form-button {
+  line-height: 0;
+}
+
+
+/* Сортировка */
+.sorting__title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.sorting__list {
+  list-style: none;
+}
+
+.sorting__link {
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting__svg {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.sorting__link {
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting__svg path {
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+/* текущие состояния ссылок и svg */
+.sorting__item_active {
+  color: #000;
+}
+
+.sorting__item_active .sorting__svg path {
+  fill: #000;
+}
+
+/* Каталог */
+.catalog__list {
+  list-style: none;
+}
+
+.catalog__title {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000;
+}
+
+.catalog__price {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  color: #464646;
+}
+
+.catalog__button-compare {
+  background-color: transparent;
+  border: none;
+  font-size: 13px;
+  line-height: 36px;
+  letter-spacing: 0.13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Пагинация */
+.pagination__list {
+  list-style: none;
+}
+
+.pagination__link {
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination__link_current {
+  color: #000;
+}
+
+.pagination__link_prev,
+.pagination__link_next {
+  color: #000;
+}
+
+
+
+
+
+
+

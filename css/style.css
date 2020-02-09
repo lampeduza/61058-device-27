@@ -127,6 +127,8 @@ a {
 .header__form-search {
   font-size: 15px;
   line-height: 30px;
+
+  background-color: transparent;
 }
 
 .header__form-button {
@@ -134,6 +136,8 @@ a {
   color: inherit;
   font-weight: inherit;
   letter-spacing: 0.15px;
+
+  background-color: transparent;
 }
 
 /* Стилизация списков управления */
@@ -153,11 +157,11 @@ a {
 
 /* Навигация */
 .navigation {
-  background-color: rgba(240, 197, 46, 0.5)
+
 }
 
 .navigation__list {
-  background-color: rgba(240, 197, 46, 0.5)
+
 }
 
 /* Навигация (списки меню и подменю) */

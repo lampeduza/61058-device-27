@@ -151,6 +151,15 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/* Навигация */
+.navigation {
+  background-color: rgba(240, 197, 46, 0.5)
+}
+
+.navigation__list {
+  background-color: rgba(240, 197, 46, 0.5)
+}
+
 /* Навигация (списки меню и подменю) */
 .navigation__list,
 .navigation__list-column {
@@ -178,6 +187,9 @@ a {
 /* Главная страница */
 
 /* Слайдер */
+.slider {
+  background-color: transparent;
+}
 /* Список слайдов */
 .slider__list {
   list-style: none;
@@ -219,6 +231,10 @@ a {
   list-style: none;
 }
 
+.categories__item {
+  background-color: rgba(240, 197, 46, 0.5)
+}
+
 /* Заголовок категорий */
 .categories__title {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -230,6 +246,9 @@ a {
 }
 
 /* Услуги */
+.services {
+  background-color: #e5e5e5;
+}
 
 .services__list,
 .services__slider-list {
@@ -258,8 +277,8 @@ a {
   letter-spacing: 0.15px;
 }
 
-/* БРЭНДЫ
-- - - - - - место для стилей БРЭНДЫ - - - - - - - */
+/*Тут будут стили для Брэндов */
+
 
 
 /* Информация */
@@ -286,6 +305,10 @@ a {
   font-size: 16px;
   font-weight: 800;
   line-height: 40px;
+}
+
+.information__contacts-image {
+  background-color: #e9e9e9;
 }
 
 /* footer */
@@ -393,9 +416,19 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+
+  background-color: #f2f2f2;
   color: rgba(70, 70, 70, 0.4);
 }
 
+.modal-feedback__area {
+  background-color: #f2f2f2;
+}
+
+/* Модально окно с картой */
+.modal-map__image {
+  background-color: #e9e9e9;
+}
 
 /* Заголовок внутренней страницы главного контента */
 .inner__title {
@@ -421,6 +454,10 @@ a {
 
 /* Фильтр */
 
+.filter {
+  background-color: #ebebeb;
+}
+
 .filter__title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
@@ -428,6 +465,8 @@ a {
   line-height: 24px;
   letter-spacing: 3.2px;
   text-transform: uppercase;
+
+  background-color; #d9d9d9;
 }
 
 .filter__form-title {
@@ -450,6 +489,10 @@ a {
 
 
 /* Сортировка */
+.sorting {
+  background-color: #ebebeb;
+}
+
 .sorting__title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 16px;
@@ -497,6 +540,10 @@ a {
   list-style: none;
 }
 
+.catalog__item {
+  background-color: #eeeeee;
+}
+
 .catalog__title {
   font-family: "Gilroy", "Arial", sans-serif;
   font-size: 18px;
@@ -524,6 +571,10 @@ a {
 }
 
 /* Пагинация */
+.pagination {
+  background-color: #ebebeb;
+}
+
 .pagination__list {
   list-style: none;
 }

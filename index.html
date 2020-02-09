@@ -35,17 +35,17 @@
 
       <ul class="header__links-list links">
         <li class="links__item"><a class="links__compare header__link" href="#">Сравнить</a>
-          <li class="links__item"><a class="links__basket header__link" href="#">Корзина</a>
-          </ul>
+        <li class="links__item"><a class="links__basket header__link" href="#">Корзина</a>
+      </ul>
         </div>
 
-        <!-- main navigation -->
+        <!-- navigation -->
         <nav class="navigation">
           <ul class="navigation__list">
-            <!-- class: positioning (относительно этого элемента будет позиционироваться подменю) -->
+
             <li class="navigation__item navigation__item_positioning"><a class="navigation__link" href="inner.html">Каталог товаров</a>
 
-              <!-- подменю -->
+              <!-- submenu -->
               <ul class="navigation__list-column">
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Виртуальная реальность</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Моноподы для селфи</a></li>
@@ -64,7 +64,7 @@
       </header>
 
       <main class="main">
-        <h1 class="main__title">Главная страница сайта Девайс</h1>
+        <h1 class="visually-hidden">Главная страница сайта Девайс</h1>
 
         <!-- slider -->
         <section class="slider" tabindex="0">
@@ -91,9 +91,9 @@
                   <th class="table__cell table__heading">Карбон</th>
                 </tr>
                 <tr class="table__row">
-                  <td class="table__cell">Длина палки</td>
-                  <td class="table__cell">Вес палки</td>
-                  <td class="table__cell">Материал</td>
+                  <td class="table__cell table__info">Длина палки</td>
+                  <td class="table__cell table__info">Вес палки</td>
+                  <td class="table__cell table__info">Материал</td>
                 </tr>
               </table>
             </li>
@@ -110,7 +110,7 @@
                   <th class="table__cell table__heading">48 часов</th>
                 </tr>
                 <tr class="table__row">
-                  <td class="table__cell">Без подзарядки</td>
+                  <td class="table__cell table__info">Без подзарядки</td>
                 </tr>
               </table>
             </li>
@@ -128,8 +128,8 @@
                   <th class="table__cell table__heading">50 м</th>
                 </tr>
                 <tr class="table__row">
-                  <td class="table__cell">Дальность полета</td>
-                  <td class="table__cell">Радиус поражения</td>
+                  <td class="table__cell table__info">Дальность полета</td>
+                  <td class="table__cell table__info">Радиус поражения</td>
                 </tr>
               </table>
             </li>
@@ -239,9 +239,9 @@
         <section class="information">
           <!-- about -->
           <div class="information__about">
-            <h2 class="information__about-title">О нас</h2>
-            <p class="information__about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-            <p class="information__about-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+            <h2 class="information__about-title information__title">О нас</h2>
+            <p class="information__about-text information__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p class="information__about-text information__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 
             <ul class="information__partnership-list partnership">
               <li class="partnership__item">Деловые Линии</li>
@@ -255,8 +255,8 @@
 
           <!-- contacts -->
           <div class="information__contacts">
-            <h2 class="information__contacts-title">Контакты</h2>
-            <p class="information__contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+            <h2 class="information__contacts-title information__title">Контакты</h2>
+            <p class="information__contacts-text information__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <a class="information__contacts-link" href="#">
               <img class="information__contacts-image" src="img/map.png" width="560" height="222" alt="город Санкт-Петербург, улица Строителей, дом 15">
             </a>
@@ -288,7 +288,7 @@
 
             <!-- middle row -->
             <div class="footer__middle-row">
-              <p class="footer__middle-text">г. Москва, ул. Строителей, 15</p>
+              <p class="footer__middle-text footer__text">г. Москва, ул. Строителей, 15</p>
 
               <ul class="footer__middle-list">
                 <li class="footer__middle-item"><a class="footer__middle-link" href="#">Доставка</a></li>
@@ -296,7 +296,7 @@
                 <li class="footer__middle-item"><a class="footer__middle-link" href="#">Контакты</a></li>
               </ul>
 
-              <a class="footer__middle-text" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+              <a class="footer__middle-text footer__text" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
             </div>
 
             <!-- bottom row -->
@@ -342,14 +342,14 @@
           <form class="modal-feedback__form" action="https://echo.htmlacademy.ru" method="post">
 
             <div class="modal-feedback__row">
-              <label class="modal-feedback__label" for="name-field">Ваше имя:</label>
+              <label class="modal-feedback__label modal-feedback__text" for="name-field">Ваше имя:</label>
               <input class="modal-feedback__input" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
 
-              <label class="modal-feedback__label" for="email-field">Ваш e-mail:</label>
+              <label class="modal-feedback__label modal-feedback__text" for="email-field">Ваш e-mail:</label>
               <input class="modal-feedback__input" type="text" name="email" id="email-field" placeholder="email@example.com">
             </div>
 
-            <label class="modal-feedback__label" for="area-field">Текст письма:</label>
+            <label class="modal-feedback__label modal-feedback__text" for="area-field">Текст письма:</label>
             <textarea class="modal-feedback__area" name="text-field" id="area-field">В свободной форме</textarea>
 
             <button class="modal-feedback__button button" type="submit">Отправить</button>
@@ -359,7 +359,7 @@
 
         <!-- modal map -->
         <section class="modal modal-map">
-          <h2 class="˜visually-hidden">Как до нас добраться</h2>
+          <h2 class="visually-hidden">Как до нас добраться</h2>
           <a class="modal-map__link" href="#">
             <img class="modal-map__image" src="img/map-big.jpg" width="960" height="559" alt="Изображение карты и отметка на карте нашего местоположения">
           </a>

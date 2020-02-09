@@ -40,13 +40,13 @@
           </ul>
         </div>
 
-        <!-- main navigation -->
+        <!-- navigation -->
         <nav class="navigation">
           <ul class="navigation__list">
-            <!-- class: positioning (относительно этого элемента будет позиционироваться подменю) -->
+
             <li class="navigation__item navigation__item_positioning"><a class="navigation__link" href="#">Каталог товаров</a>
 
-              <!-- подменю -->
+              <!-- submenu -->
               <ul class="navigation__list-column">
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Виртуальная реальность</a></li>
                 <li class="navigation__list-item"><a class="navigation__list-link" href="#">Моноподы для селфи</a></li>
@@ -73,13 +73,13 @@
           <ul class="breadscrumbs__list">
             <li class="breadscrumbs__item"><a class="breadscrumbs__link" href="#">Главная</a></li>
             <li class="breadscrumbs__item"><a class="breadscrumbs__link" href="#">Каталог товаров</a></li>
-            <li class="breadscrumbs__item breadscrumbs__item_active">Моноподы для селфи</li>
+            <li class="breadscrumbs__item breadscrumbs__item_active"><a class="breadscrumbs__link">Моноподы для селфи</a></li>
           </ul>
         </div>
 
         <!-- filter -->
         <section class="filter">
-          <h2 class="filter__title">Фильтр:</h2>
+          <h3 class="filter__title">Фильтр:</h3>
 
           <form class="filter__form" action="url" method="post">
 
@@ -157,21 +157,21 @@
           <h2 class="visually-hidden">Колонка с каталогом товаров</h2>
           <!-- sorting -->
           <div class="product-column__sorting sorting">
-            <p class="sorting__title">Сортировка</p>
+            <h3 class="sorting__title">Сортировка</h3>
 
             <ul class="sorting__list">
-              <li class="sorting__item sorting__item_active">По цене</li>
+              <li class="sorting__item sorting__item_active"><a class="sorting__link_active">По цене</a></li>
               <li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
               <li class="sorting__item"><a class="sorting__link" href="#">по популярности</a></li>
               <li class="sorting__item">
-                <a class="sorting__link sorting__link_up sorting__link_current" href="#" aria-label="По возрастанию цены">
+                <a class="sorting__link sorting__link_up" href="#" aria-label="По возрастанию цены">
                 <svg class="sorting__svg" xmlns="http://www.w3.org/2000/svg" width="11" height="10">
                   <path fill="#231F20" d="M5.5 0L0 10h11z"/>
                 </svg>
               </a>
             </li>
-              <li class="sorting__item">
-                <a class="sorting__link sorting__link_down" href="#" aria-label="По убыванию цены">
+              <li class="sorting__item sorting__item_active">
+                <a class="sorting__link sorting__link_down sorting__link_active" href="#" aria-label="По убыванию цены">
                   <svg class="sorting__svg" xmlns="http://www.w3.org/2000/svg" width="11" height="10">
                     <path fill="#231F20" d="M5.5 10L0 0h11"/>
                   </svg>
@@ -199,7 +199,7 @@
                 <!-- при наведении будут выскакивать кнопки -->
                 <div class="catalog__action">
                   <button class="catalog__button button" type="button">В корзину</button>
-                  <button class="catalog__button catalog__button-compare" type="button">Добавить к сравнению</button>
+                  <button class="catalog__button-compare" type="button">Добавить к сравнению</button>
                 </div>
               </li>
 
@@ -216,7 +216,7 @@
                 <!-- при наведении будут выскакивать кнопки -->
                 <div class="catalog__action">
                   <button class="catalog__button button" type="button">В корзину</button>
-                  <button class="catalog__button catalog__button-compare" type="button">Добавить к сравнению</button>
+                  <button class="catalog__button-compare" type="button">Добавить к сравнению</button>
                 </div>
               </li>
 
@@ -233,7 +233,7 @@
                 <!-- при наведении будут выскакивать кнопки -->
                 <div class="catalog__action">
                   <button class="catalog__button button" type="button">В корзину</button>
-                  <button class="catalog__button catalog__button-compare" type="button">Добавить к сравнению</button>
+                  <button class="catalog__button-compare" type="button">Добавить к сравнению</button>
                 </div>
               </li>
 
@@ -250,7 +250,7 @@
                 <!-- при наведении будут выскакивать кнопки -->
                 <div class="catalog__action">
                   <button class="catalog__button button" type="button">В корзину</button>
-                  <button class="catalog__button catalog__button-compare" type="button">Добавить к сравнению</button>
+                  <button class="catalog__button-compare" type="button">Добавить к сравнению</button>
                 </div>
               </li>
             </ul>
@@ -259,11 +259,11 @@
           <!-- pagination -->
           <div class="pagination">
             <ul class="pagination__list">
-              <li class="pagination__item"><a class="pagination__link" href="#">Назад</a></li>
-              <li class="pagination__item pagination__item_active">1</li>
+              <li class="pagination__item"><a class="pagination__link pagination__link_prev" href="#">Назад</a></li>
+              <li class="pagination__item"><a class="pagination__link pagination__link_current">1</a></li>
               <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
               <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-              <li class="pagination__item"><a class="pagination__link" href="#">Вперед</a></li>
+              <li class="pagination__item"><a class="pagination__link pagination__link_next" href="#">Вперед</a></li>
             </ul>
           </div>
         </section>
@@ -282,8 +282,8 @@
 
           <!-- links -->
           <ul class="footer__list-user user">
-            <li class="user__item"><a class="user__person" href="#">Валентин Петухов</a></li>
-            <li class="user__item"><a class="user__logout" href="#">Выйти</a></li>
+            <li class="user__item"><a class="user__link user__person" href="#">Валентин Петухов</a></li>
+            <li class="user__item"><a class="user__link user__logout" href="#">Выйти</a></li>
           </ul>
 
           <ul class="footer__list-links links">
@@ -294,7 +294,7 @@
 
             <!-- middle row -->
             <div class="footer__middle-row">
-              <p class="footer__middle-text">г. Москва, ул. Строителей, 15</p>
+              <p class="footer__middle-text footer__text">г. Москва, ул. Строителей, 15</p>
 
               <ul class="footer__middle-list">
                 <li class="footer__middle-item"><a class="footer__middle-link" href="#">Доставка</a></li>
@@ -302,7 +302,7 @@
                 <li class="footer__middle-item"><a class="footer__middle-link" href="#">Контакты</a></li>
               </ul>
 
-              <a class="footer__middle-text" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+              <a class="footer__middle-text footer__text" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
             </div>
 
             <!-- bottom row -->

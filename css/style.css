@@ -42,10 +42,6 @@
        url("../fonts/web/gilroyextrabold.woff") format("woff");
 }
 
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
@@ -53,7 +49,13 @@ html {
   padding: 0;
 }
 
+html {
+  box-sizing: border-box;
+}
+
 body {
+  box-sizing: inherit;
+
   padding: 0;
   margin: 0;
 
@@ -62,6 +64,9 @@ body {
   line-height: 30px;
   font-weight: 300;
   color: #000;
+
+  /* Временно, для визуального удобства */
+  margin: 50px;
 }
 
 img {
@@ -110,12 +115,12 @@ a {
 
 /* Состояния для Логотипа в шапке */
 .header__logo-picture:hover path {
-  fill: rgba(0, 0, 0, 0.6);
+  opacity: 0.6;
 }
 
 .header__logo-picture:active path,
 .header__logo-picture:focus path {
-  fill: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
 }
 
 /* Стилизация placeholder для поля поиска */
@@ -129,6 +134,26 @@ a {
   line-height: 30px;
 
   background-color: transparent;
+  border: none;
+}
+
+.header__form-search:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* не знаю, нужно или нет
+
+.header__form-search:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+*/
+
+.header__form-search:focus::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+.header__form-search:focus ~ .header__form-button {
+  border: 2px solid #000;
 }
 
 .header__form-button {
@@ -138,6 +163,18 @@ a {
   letter-spacing: 0.15px;
 
   background-color: transparent;
+  border: none;
+}
+
+.header__form-button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.header__form-button:focus,
+.header__form-button:active {
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Стилизация списков управления */
@@ -149,6 +186,15 @@ a {
 .header__link {
   color: #000;
   letter-spacing: 0.15px;
+}
+
+.header__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header__link:focus,
+.header__link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .header__list-link_logout {
@@ -181,11 +227,29 @@ a {
   text-transform: uppercase;
 }
 
+.navigation__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation__link:active,
+.navigation__link:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /* Ссылки подменю */
 .navigation__list-link {
   color: inherit;
   letter-spacing: 0.15px;
   line-height: 36px;
+}
+
+.navigation__list-link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation__list-link:active,
+.navigation__list-link:focus {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* Главная страница */
@@ -194,6 +258,11 @@ a {
 .slider {
   background-color: transparent;
 }
+
+.slider__controls {
+  list-style: none;
+}
+
 /* Список слайдов */
 .slider__list {
   list-style: none;
@@ -235,8 +304,22 @@ a {
   list-style: none;
 }
 
-.categories__item {
-  background-color: rgba(240, 197, 46, 0.5)
+.categories__image-wrapper {
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.categories__item:hover .categories__image-wrapper {
+  background-color: rgba(240, 197, 46, 1);
+}
+
+.categories__item:focus .categories__image,
+.categories__item:active .categories__image {
+  opacity: 0.3;
+}
+
+.categories__item:focus .categories__title,
+.categories__item:active .categories__title {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* Заголовок категорий */
@@ -282,6 +365,17 @@ a {
 }
 
 /*Тут будут стили для Брэндов */
+
+.brands__list {
+  list-style: none;
+}
+
+.brands__item:hover .brands__images {
+
+  /* Не знаю, праавильно ли сделал, но все так, как на макете */
+  opacity: 0.2;
+  filter: grayscale(100%);
+}
 
 
 
@@ -351,6 +445,15 @@ a {
   letter-spacing: 0.15px;
 }
 
+.footer__link:hover {
+  color: #fff;
+}
+
+.footer__link:active,
+.footer__link:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .footer__list-link_logout {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -374,26 +477,46 @@ a {
   color: #fff;
 }
 
+.footer__middle-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__middle-link:active,
+.footer__middle-link:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 /* Список соц. сетей */
-.footer__bottom-social {
+.social-list {
   list-style: none;
 }
 
 /* Состояния для  соц. сетей */
-.social__list-svg path {
+.social-list__svg path {
   fill: rgba(255, 255, 255, 0.3);
 }
 
-.social__list-svg:hover path {
+.social-list__svg:hover path {
   fill: rgba(255, 255, 255, 0.6);
 }
 
-.social__list-svg:active path,
-.social__list-svg:focus path {
+.social-list__svg:active path,
+.social-list__svg:focus path {
   fill: rgba(255, 255, 255, 0.1);
 }
 
+.footer__bottom-picture:hover {
+  opacity: 0.6;
+}
 
+.footer__bottom-picture:active,
+.footer__bottom-picture:focus {
+  opacity: 0.3;
+}
+
+.modal {
+  display: none;
+}
 
 /* Модальное окно с обратным отзывом */
 .modal-feedback {
@@ -456,6 +579,15 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.breadscrumbs__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadscrumbs__link:focus,
+.breadscrumbs__link:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
 /* Фильтр */
 
 .filter {
@@ -479,6 +611,10 @@ a {
   font-weight: 800;
   line-height: 24px;
   letter-spacing: 0.18px;
+}
+
+.filter__form-list {
+  list-style: none;
 }
 
 .filter__form-label {
@@ -544,8 +680,15 @@ a {
   list-style: none;
 }
 
-.catalog__item {
-  background-color: #eeeeee;
+.catalog__image {
+  display: block;
+
+  width: 360px;
+  height: 380px;
+}
+
+.catalog__image:hover {
+  opacity: 0.7;
 }
 
 .catalog__title {
@@ -572,6 +715,15 @@ a {
   line-height: 36px;
   letter-spacing: 0.13px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.catalog__button-compare:hover {
+  color: #000;
+}
+
+.catalog__button-compare:active,
+.catalog__button-compare:focus {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 /* Пагинация */

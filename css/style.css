@@ -662,14 +662,32 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.sorting__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting__link:active,
+.sorting__link:focus {
+  color: rgba(0, 0, 0, 1);
+}
+/* текущие состояния ссылок и svg */
+.sorting__link_active {
+  color: #000;
+}
+
 .sorting__svg path {
   fill: rgba(0, 0, 0, 0.2);
 }
 
-/* текущие состояния ссылок и svg */
-.sorting__item_active {
-  color: #000;
+.sorting__svg:hover path {
+  fill: rgba(0, 0, 0, 0.4);
 }
+
+.sorting__svg:active path,
+.sorting__svg:focus path {
+  fill: rgba(0, 0, 0, 1);
+}
+
 
 .sorting__item_active .sorting__svg path {
   fill: #000;

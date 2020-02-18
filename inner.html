@@ -9,7 +9,7 @@
 <body>
 
   <!-- header -->
-  <header class="header">
+  <header class="header header-inner container">
     <!-- header logo -->
     <a class="header__logo" href="index.html">
       <svg class="header__logo-picture" xmlns="http://www.w3.org/2000/svg" width="163" height="35" aria-labelledby="title">
@@ -28,55 +28,67 @@
         <button class="header__form-button" type="button">Найти</button>
       </form>
 
+      <div class="header__navigation">
       <!-- links -->
       <ul class="header__list header__list_user">
-        <li class="header__list-item"><a class="header__list-link header__list-link_user header__link" href="#">Валентин Петухов</a></li>
+        <li class="header__list-item header__list-item_user"><a class="header__list-link header__list-link_user header__link" href="#">Валентин Петухов</a></li>
         <li class="header__list-item"><a class="header__list-link header__list-link_logout header__link" href="#">Выйти</a></li>
       </ul>
 
       <ul class="header__list header__list_links">
-        <li class="header__list-item"><a class="header__list-link header__list-link_compare header__link" href="#">Сравнить</a></li>
+        <li class="header__list-item header__list-item_compare"><a class="header__list-link header__list-link_compare header__link" href="#">Сравнить</a></li>
         <li class="header__list-item"><a class="header__list-link header__list-link_basket header__link" href="#">Корзина</a></li>
       </ul>
     </div>
+    </div>
 
     <!-- navigation -->
-    <nav class="navigation">
+     <nav class="navigation">
       <ul class="navigation__list">
 
-        <li class="navigation__item navigation__item_positioning"><a class="navigation__link" href="#">Каталог товаров</a>
+        <li class="navigation__item navigation__item_positioning navigation__item_catalog"><a class="navigation__link" href="inner.html">Каталог товаров</a>
 
           <!-- submenu -->
-          <ul class="navigation__list-column">
-            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Виртуальная реальность</a></li>
-            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Моноподы для селфи</a></li>
-            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Экшн-камеры</a></li>
-            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Фитнес браслеты</a></li>
-            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Умные часы</a></li>
-            <li class="navigation__list-item"><a class="navigation__list-link" href="#">Квадракоптеры</a></li>
-          </ul>
-
-        </li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Гарантия</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
-      </ul>
-    </nav>
+          <ul class="navigation__list navigation__list_row">
+           <li class="navigation__item_col">
+            <ul class="navigation__list navigation__list_col">
+              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Виртуальная реальность</a></li>
+              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Моноподы для селфи</a></li>
+              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul class="navigation__list navigation__list_col">
+              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Фитнес браслеты</a></li>
+              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Умные часы</a></li>
+            </ul>
+            <ul class="navigation__list navigation__list_col">
+              <li class="navigation__list-item"><a class="navigation__list-link" href="#">Квадракоптеры</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="navigation__item navigation__item_delivery"><a class="navigation__link" href="#">Доставка</a></li>
+      <li class="navigation__item navigation__item_warranty"><a class="navigation__link" href="#">Гарантия</a></li>
+      <li class="navigation__item navigation__item_contacts"><a class="navigation__link" href="#">Контакты</a></li>
+    </ul>
+  </nav>
   </header>
 
   <main class="inner-main">
 
+    <div class="inner-main__wrapper container">
     <h1 class="inner__title">Моноподы для селфи</h1>
 
     <!-- breadscrumbs -->
     <div class="breadscrumbs">
       <ul class="breadscrumbs__list">
-        <li class="breadscrumbs__item"><a class="breadscrumbs__link" href="#">Главная</a></li>
-        <li class="breadscrumbs__item"><a class="breadscrumbs__link" href="#">Каталог товаров</a></li>
+        <li class="breadscrumbs__item breadscrumbs__item_main"><a class="breadscrumbs__link breadscrumbs__link_main" href="#">Главная</a></li>
+        <li class="breadscrumbs__item breadscrumbs__item_catalog"><a class="breadscrumbs__link breadscrumbs__link_catalog" href="#">Каталог товаров</a></li>
         <li class="breadscrumbs__item breadscrumbs__item_active"><a class="breadscrumbs__link" tabindex="0">Моноподы для селфи</a></li>
       </ul>
     </div>
+  </div>
 
+  <div class="index-column container">
     <!-- filter -->
     <section class="filter">
       <h3 class="filter__title">Фильтр:</h3>
@@ -163,7 +175,10 @@
           <li class="sorting__item sorting__item_active"><a class="sorting__link sorting__link_active">По цене</a></li>
           <li class="sorting__item"><a class="sorting__link" href="#">По типу</a></li>
           <li class="sorting__item"><a class="sorting__link" href="#">По популярности</a></li>
-          <li class="sorting__item">
+        </ul>
+
+        <ul class="sorting__list sorting__list_arrows">
+          <li class="sorting__item sorting__item_up">
             <a class="sorting__link sorting__link_up" href="#" aria-label="По возрастанию цены">
               <svg class="sorting__svg" xmlns="http://www.w3.org/2000/svg" width="11" height="10">
                 <path fill="#231F20" d="M5.5 0L0 10h11z"/>
@@ -209,7 +224,7 @@
               <img class="catalog__image" src="img/item-2.jpg" width="360" height="380" alt="Изображение профессиональлной селфи-палки">
             </div>
             <a class="catalog__link" href="#">
-              <h3 class="catalog__title">Профессиональная селфи-палка</h3>
+              <h3 class="catalog__title catalog__title_professional">Профессиональная селфи-палка</h3>
               <span class="catalog__price">1 500 руб.</span>
             </a>
 
@@ -259,19 +274,20 @@
       <!-- pagination -->
       <div class="pagination">
         <ul class="pagination__list">
-          <li class="pagination__item"><a class="pagination__link pagination__link_prev" href="#">Назад</a></li>
-          <li class="pagination__item"><a class="pagination__link pagination__link_current">1</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
-          <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
-          <li class="pagination__item"><a class="pagination__link pagination__link_next" href="#">Вперед</a></li>
+          <li class="pagination__item pagination__item_prev"><a class="pagination__link pagination__link_prev" href="#">Назад</a></li>
+          <li class="pagination__item pagination__item_number"><a class="pagination__link pagination__link_current">1</a></li>
+          <li class="pagination__item pagination__item_number"><a class="pagination__link" href="#">2</a></li>
+          <li class="pagination__item pagination__item_number"><a class="pagination__link" href="#">3</a></li>
+          <li class="pagination__item pagination__item_next"><a class="pagination__link pagination__link_next" href="#">Вперед</a></li>
         </ul>
       </div>
+    </div> <!-- end index column -->
     </section>
   </main>
 
   <!-- footer -->
   <footer class="footer">
-
+    <div class="container">
     <!-- top row -->
     <div class="footer__top-row">
       <a class="footer__top-logo" href="index.html">
@@ -282,19 +298,19 @@
 
       <!-- links -->
       <ul class="footer__list footer__list_user">
-        <li class="footer__list-item"><a class="footer__list-link footer__list-link_user footer__link" href="#">Валентин Петухов</a></li>
+        <li class="footer__list-item footer__list-item_user"><a class="footer__list-link footer__list-link_user footer__link" href="#">Валентин Петухов</a></li>
         <li class="footer__list-item"><a class="footer__list-link footer__list-link_logout footer__link" href="#">Выйти</a></li>
       </ul>
 
       <ul class="footer__list footer__list_links">
-        <li class="footer__list-item"><a class="footer__list-link footer__list-link_compare footer__link" href="#">Сравнить</a></li>
+        <li class="footer__list-item footer__list-item_compare"><a class="footer__list-link footer__list-link_compare footer__link" href="#">Сравнить</a></li>
         <li class="footer__list-item"><a class="footer__list-link footer__list-link_basket footer__link" href="#">Корзина</a></li>
       </ul>
         </div>
 
         <!-- middle row -->
         <div class="footer__middle-row">
-          <p class="footer__middle-text footer__text">г. Москва, ул. Строителей, 15</p>
+          <p class="footer__middle-address footer__text">г. Москва, ул. Строителей, 15</p>
 
           <ul class="footer__middle-list">
             <li class="footer__middle-item"><a class="footer__middle-link" href="#">Доставка</a></li>
@@ -302,7 +318,7 @@
             <li class="footer__middle-item"><a class="footer__middle-link" href="#">Контакты</a></li>
           </ul>
 
-          <a class="footer__middle-text footer__text" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+          <a class="footer__middle-number footer__text" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
         </div>
 
         <!-- bottom row -->
@@ -341,6 +357,7 @@
           <img class="footer__bottom-picture" src="img/icons/logo-htmlacademy.svg" width="22" height="35" alt="Логотип сайта htmlacademy">
         </a>
       </div>
+    </div>
     </footer>
   </body>
   </html>

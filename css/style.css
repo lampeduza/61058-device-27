@@ -374,9 +374,8 @@ a {
 
 /* Слайдер */
 .slider {
-  background-color: transparent;
+  background-color: #fff;
   padding-bottom: 106px;
-  margin-top: -100px;
 }
 
 .slider__controls {
@@ -394,6 +393,7 @@ a {
 /* Список слайдов */
 .slider__list {
   list-style: none;
+  counter-reset: li;
 }
 
 .slider__item {
@@ -401,11 +401,27 @@ a {
   justify-content: space-between;
 
   background-color: transparent;
+
+  position: relative;
 }
 
+.slider__item::before {
+  counter-increment: li;
+  content: counter(li, decimal-leading-zero);
 
-.slider__item_slim,
-.slider__item_fly {
+  position: absolute;
+  top: -126px;
+  right: -14px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 179px;
+  font-weight: 800;
+  line-height: 179px;
+  letter-spacing: 1.79px;
+  color: #fff;
+}
+
+.slider__item_fly,
+.slider__item_slim {
   display: none;
 }
 
@@ -419,6 +435,11 @@ a {
   position: relative;
 }
 
+.slider__image-wrapper,
+.slider__info {
+  margin-top: -100px;
+}
+
 /* Заголовок слайдов */
 .slider__title {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -428,6 +449,20 @@ a {
   letter-spacing: 0.47px;
   margin-bottom: 31px;
   margin-top: 70px;
+
+  position: relative;
+}
+
+.slider__title::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 7px;
+  background-color: #fff;
+
+  position: absolute;
+  top: -42px;
+  left: 0;
 }
 
 .slider__text {

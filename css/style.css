@@ -112,12 +112,12 @@ a {
   margin-top: 40px;
   background-color: rgba(240, 197, 46, 0.5);
 
-  height: 299px;
+  min-height: 299px;
   padding: 0 60px;
 }
 
 .header-inner {
-  height: 186px;
+  min-height: 186px;
 }
 
 .header__logo {
@@ -308,7 +308,7 @@ a {
 .navigation__list_row {
   display: none;
   width: 1160px;
-  height: 140px;
+  min-height: 140px;
   background-color: #fff;
 
   position: absolute;
@@ -388,6 +388,11 @@ a {
 
 .slider__controls-list {
   list-style: none;
+
+  display: flex;
+
+  /* временно, чтобы выделить контролы */
+  background-color: #000;
 }
 
 /* Список слайдов */
@@ -519,17 +524,24 @@ a {
 /* Категории товаров */
 .categories {
   padding-bottom: 164px;
+
+  width: 1160px;
+  margin: 0 auto;
 }
 /* Список категорий */
 .categories__list {
   list-style: none;
 
   display: flex;
-  justify-content: space-between;
 }
 
 .categories__item {
   width: 160px;
+  margin-right: 40px;
+}
+
+.categories__item:last-child {
+  margin-right: 0;
 }
 
 .categories__image-wrapper {
@@ -611,10 +623,23 @@ a {
 
 .services__slider-item {
   display: none;
+  justify-content: space-between;
 }
 
 .services__slider-item_delivery {
   display: flex;
+}
+
+.services__slider-info_delivery {
+  width: 426px;
+}
+
+.services__slider-info_warranty {
+  width: 436px;
+}
+
+.services__slider-info_credit {
+  width: 425px;
 }
 
 .services__slider-title {
@@ -632,8 +657,30 @@ a {
   margin-bottom: 151px;
 }
 
+.services__slider-image_delivery {
+  width: 136px;
+  height: 164px;
+}
+
+.services__wrapper_delivery {
+  width: 136px;
+  height: 164px;
+}
+
+.services__wrapper_credit {
+  width: 171px;
+  height: 194px;
+}
+
+.services__wrapper_warranty {
+  width: 156px;
+  height: 186px;
+}
+
 /*Тут будут стили для Брэндов */
 .brands {
+  width: 1160px;
+  margin: 0 auto;
   padding-top: 94px;
   padding-bottom: 93px;
   margin-top: 16px;
@@ -644,6 +691,14 @@ a {
 
   display: flex;
   justify-content: space-between;
+}
+
+.brands__item {
+  margin-right: 40px;
+}
+
+.brands__item:last-child {
+  margin-right: 0;
 }
 
 .brands__images {
@@ -1209,7 +1264,7 @@ a {
   display: block;
 
   width: 360px;
-  height: 380px;
+  min-height: 380px;
 }
 
 .catalog__image:hover {

@@ -1310,6 +1310,13 @@ a {
   resize: vertical;
 }
 
+.modal-feedback__button::after {
+  width: 200px;
+  top: 50%;
+  left: -35px;
+  transform: translateY(-50%);
+}
+
 .modal__close {
   font-size: 0;
   width: 55px;
@@ -1321,6 +1328,8 @@ a {
   top: 22px;
   right: 22px;
 }
+
+
 
 /* Модально окно с картой */
 .modal-map {

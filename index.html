@@ -89,11 +89,11 @@
       <!-- slide 1 -->
       <li class="slider__item slider__item_selfie slider__item_active">
 
-        <div class="slider__image-wrapper">
+        <div class="slider__image-wrapper selfie-wrapper">
           <img class="slider__image" src="img/slide-1.png" width="384" height="486" alt="">
         </div>
 
-        <div class="slider__info">
+        <div class="slider__info selfie-info">
           <h2 class="slider__title">Делай селфи,<br>как Бен Стиллер!</h2>
           <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
           <button class="slider__button button button-macaroni" type="button">Подробнее</button>
@@ -116,12 +116,12 @@
       <!-- slide 2 -->
       <li class="slider__item slider__item_slim">
 
-        <div class="slider__image-wrapper">
+        <div class="slider__image-wrapper slim-wrapper">
           <img class="slider__image" src="img/slide-2.png" width="345" height="485" alt="">
         </div>
 
-        <div class="slider__info">
-          <h2 class="slider__title">Худеем<br>правильно!</h2>
+        <div class="slider__info slim-info">
+          <h2 class="slider__title slider__title_slim">Худеем<br>правильно!</h2>
           <p class="slider__text slider__text_slim">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <button class="slider__button button button-macaroni" type="button">Подробнее</button>
 
@@ -139,23 +139,23 @@
       <!-- slide 3 -->
       <li class="slider__item slider__item_fly">
 
-        <div class="slider__image-wrapper">
+        <div class="slider__image-wrapper fly-wrapper">
           <img class="slider__image" src="img/slide-3.png" width="526" height="334" alt="">
         </div>
 
-        <div class="slider__info">
+        <div class="slider__info fly-info">
           <h2 class="slider__title">Пархает как бабочка, жалит как пчела!</h2>
           <p class="slider__text slider__text_fly">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <button class="slider__button button button-macaroni" type="button">Подробнее</button>
 
           <table class="slider__table table">
             <tr class="table__row">
-              <th class="table__cell table__heading">800 м</th>
-              <th class="table__cell table__heading">50 м</th>
+              <th class="table__cell table__cell_fly table__heading">800 м</th>
+              <th class="table__cell table__cell_fly table__heading">50 м</th>
             </tr>
             <tr class="table__row">
-              <td class="table__cell table__info">Дальность полета</td>
-              <td class="table__cell table__info">Радиус поражения</td>
+              <td class="table__cell table__info table__info_fly">Дальность полета</td>
+              <td class="table__cell table__info table__info_fly">Радиус поражения</td>
             </tr>
           </table>
         </div>
@@ -180,10 +180,10 @@
 
       <li class="categories__item">
         <a class="categories__link" href="inner.html">
-          <div class="categories__image-wrapper">
+          <div class="categories__image-wrapper categories__image-wrapper_selfie">
             <img class="categories__image" src="img/category-2.svg" width="86" height="117" alt="Раздел Моноподы для селфи">
           </div>
-          <h3 class="categories__title">Моноподы для селфи</h3>
+          <h3 class="categories__title">Моноподы<br>для селфи</h3>
         </a>
       </li>
 
@@ -227,13 +227,13 @@
 
   <!-- services -->
   <section class="services">
-    <div class="services__wrapper container">
+    <div class="services__wrapper">
       <h2 class="visually-hidden">Услуги</h2>
 
       <ul class="services__list">
-        <li class="services__item"><button class="services__button button" type="button">Доставка</button></li>
-        <li class="services__item"><button class="services__button button" type="button">Гарантия</button></li>
-        <li class="services__item"><button class="services__button button" type="button">Кредит</button></li>
+        <li class="services__item"><button class="services__button services__button_delivery button button-macaroni" type="button">Доставка</button></li>
+        <li class="services__item"><button class="services__button services__button_warranty button button-macaroni" type="button">Гарантия</button></li>
+        <li class="services__item"><button class="services__button services__button_credit button button-macaroni" type="button">Кредит</button></li>
       </ul>
 
       <ul class="services__slider-list">
@@ -254,10 +254,10 @@
         <li class="services__slider-item services__slider-item_warranty" tabindex="0">
           <div class="services__slider-info services__slider-info_warranty">
             <h3 class="services__slider-title">Гарантия</h3>
-            <p class="services__slider-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            <p class="services__slider-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
           </div>
 
-          <div class="services__wrapper services__wrapper_credit">
+          <div class="services__wrapper services__wrapper_warranty">
             <img class="services__slider-image" src="img/warranty.svg" width="171" height="194" alt="Картинка гарантии">
           </div>
         </li>
@@ -298,7 +298,7 @@
   </section>
 
   <!-- information -->
-  <section class="information container">
+  <section class="information">
     <!-- about -->
     <div class="information__about">
       <h2 class="information__about-title information__title">О нас</h2>
@@ -330,7 +330,7 @@
 <!-- footer -->
 <footer class="footer">
 
-  <div class="container">
+  <div class="footer__wrapper">
     <!-- top row -->
     <div class="footer__top-row">
       <a class="footer__top-logo" href="index.html">
@@ -394,10 +394,10 @@
     </ul>
 
     <a class="footer__bottom-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на профессиональный курс html и css, уровень 1">
-      <img class="footer__bottom-picture" src="img/icons/logo-htmlacademy.svg" width="22" height="35" alt="Логотип сайта htmlacademy">
+      <img class="footer__bottom-picture" src="img/icons/logo-htmlacademy.svg" width="27" height="35" alt="Логотип сайта htmlacademy">
     </a>
   </div>
-</div> <!-- end container -->
+</div> <!-- end wrapper -->
 </footer>
 
 <!-- modal feedback -->

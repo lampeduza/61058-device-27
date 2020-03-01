@@ -1372,20 +1372,50 @@ a {
   font-weight: 400;
   line-height: 18px;
   width: 360px;
-  padding: 15px 20px 15px 20px;
-  border: none;
+  padding: 13px 20px 13px 20px;
   background-color: #f2f2f2;
   color: rgba(70, 70, 70, 0.4);
+  border: 3px solid transparent;
+  outline: none;
+}
+
+.modal-feedback__input:hover {
+  background-color: #eaeaea;
+}
+
+.modal-feedback__input:focus {
+  background-color: #fff;
+  color: #464646;
+  border: 3px solid #f0c52e;
+}
+
+.modal-feedback__input:required:invalid {
+  background-color: #f6dada;
 }
 
 .modal-feedback__area {
   background-color: #f2f2f2;
-  border: none;
+  border: 3px solid transparent;
   width: 760px;
-  height: 158px;
+  height: 156px;
   padding: 15px 20px 10px 20px;
   margin-bottom: 36px;
   resize: vertical;
+  outline: none;
+}
+
+.modal-feedback__area:hover {
+  background-color: #eaeaea;
+}
+
+.modal-feedback__area:focus {
+  background-color: #fff;
+  color: #464646;
+  border: 3px solid #f0c52e;
+}
+
+.modal-feedback__area:required:invalid {
+  background-color: #f6dada;
 }
 
 .modal-feedback__button {

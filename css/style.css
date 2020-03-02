@@ -640,10 +640,25 @@ a {
   padding: 0 42px;
 }
 
+.slider__button:focus,
+.slider__button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .slider__button::after {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+}
+
+.slider__button:hover::after {
+  padding: 20px 0;
+  transition: all .3s;
+}
+
+.slider__button:active::after,
+.slider__button:focus::after {
+  padding: 20px 0;
 }
 
 /* Таблица статистики */
@@ -776,7 +791,7 @@ a {
   width: 300px;
 
   position: relative;
-  top: 10px;
+  top: 16px;
 }
 
 .services__list::after {
@@ -785,12 +800,26 @@ a {
   height: 319px;
   background-color: #000;
   position: absolute;
-  top: -80px;
+  top: -86px;
   right: 16px;
 }
 
 .services__item {
-  margin-bottom: 26px;
+  margin-bottom: 34px;
+}
+
+
+
+
+
+.services__button {
+  width: 160px;
+  text-align: center;
+}
+
+.services__button:hover::after {
+  padding: 20px 0;
+  transition: all .3s;
 }
 
 .services__button::after {
@@ -799,27 +828,23 @@ a {
   left: 0;
 }
 
-.services__button {
+.services__button:active,
+.services__button:focus {
+  color: #f7e184;
+}
+
+.services__button:active::after,
+.services__button:focus::after {
   width: 278px;
-  padding: 8px 11px 8px 23px;
   text-align: left;
-  color: #f0c52e;
+  padding: 20px 0;
   background-color: #000;
 }
 
-/*
-.services__button_delivery {
-  width: 122px;
-}
 
-.services__button_warranty {
-  width: 110px;
-}
 
-.services__button_credit {
-  width: 84px;
-}
-*/
+
+
 
 .services__slider-list {
   width: 800px;
@@ -833,7 +858,7 @@ a {
   position: relative;
 }
 
-.services__slider-item_credit {
+.services__slider-item_delivery {
   display: flex;
 }
 
@@ -946,10 +971,27 @@ a {
   margin-left: 23px;
 }
 
+.information__about-button:active,
+.information__about-button:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .information__about-button::after {
   top: 50%;
-  left: 0;
+  left: -23px;
   transform: translateY(-50%);
+  width: 260px;
+}
+
+
+.information__about-button:hover::after {
+  padding: 20px 0;
+  transition: all .3s;
+}
+
+.information__about-button:active::after,
+.information__about-button:focus::after {
+  padding: 20px 0;
 }
 
 .information__contacts {
@@ -960,10 +1002,27 @@ a {
   width: 183px;
 }
 
+.information__contacts-link:active,
+.information__contacts-link:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .information__contacts-link::after {
   top: 50%;
-  left: 0;
+  left: -41px;
   transform: translateY(-50%);
+   width: 260px;
+}
+
+
+.information__contacts-link:hover::after {
+  padding: 20px 0;
+  transition: all .3s;
+}
+
+.information__contacts-link:active::after,
+.information__contacts-link:focus::after {
+  padding: 20px 0;
 }
 
 .information__title {
@@ -1422,11 +1481,26 @@ a {
   margin-left: 35px;
 }
 
+.modal-feedback__button:active,
+.modal-feedback__button:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .modal-feedback__button::after {
   width: 200px;
   top: 50%;
   left: -35px;
   transform: translateY(-50%);
+}
+
+.modal-feedback__button:hover::after {
+  padding: 20px 0;
+  transition: all .3s;
+}
+
+.modal-feedback__button:active::after,
+.modal-feedback__button:focus::after {
+  padding: 20px 0;
 }
 
 .modal__close {
@@ -1817,13 +1891,27 @@ a {
   margin-left: 40px;
 }
 
+.filter__form-button:active,
+.filter__form-button:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filter__form-button:hover::after {
+  padding: 20px 0;
+  transition: all .3s;
+}
+
+.filter__form-button:active::after,
+.filter__form-button:focus::after {
+  padding: 20px 0;
+}
+
 .filter__form-button::after {
   top: 50%;
-  left: -40px;
+  left: -42px;
   transform: translateY(-50%);
   width: 200px;
 }
-
 
 .product-column {
   display: flex;
@@ -2034,11 +2122,26 @@ a {
   margin-bottom: 14px;
 }
 
+.catalog__button:active,
+.catalog__button:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .catalog__button:after {
   top: 50%;
-  left: -25px;
+  left: -17px;
   transform: translateY(-50%);
   width: 200px;
+}
+
+.catalog__button:hover::after {
+  padding: 20px 0;
+  transition: all .3s;
+}
+
+.catalog__button:active::after,
+.catalog__button:focus::after {
+  padding: 20px 0;
 }
 
 .catalog__button-compare {

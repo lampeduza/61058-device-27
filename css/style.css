@@ -486,6 +486,7 @@ a {
   position: absolute;
   top: 206px;
   right: 81px;
+  z-index: 100;
 }
 
 .slider__controls-item {
@@ -503,6 +504,7 @@ a {
   border: 1px solid #000;
   border-radius: 50%;
   position: relative;
+  cursor: pointer;
 }
 
 .slider__controls-button_active::before {
@@ -808,10 +810,6 @@ a {
   margin-bottom: 34px;
 }
 
-
-
-
-
 .services__button {
   width: 160px;
   text-align: center;
@@ -840,11 +838,6 @@ a {
   padding: 20px 0;
   background-color: #000;
 }
-
-
-
-
-
 
 .services__slider-list {
   width: 800px;

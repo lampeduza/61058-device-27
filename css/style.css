@@ -1381,8 +1381,15 @@ a {
 }
 
 .modal {
-  position: fixed;
   z-index: 101;
+  position: fixed;
+  top: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal__wrapper {
+  position: relative;
 }
 
 /* Модальное окно с обратным отзывом */
@@ -1390,12 +1397,11 @@ a {
   width: 960px;
   background-color: #fff;
   padding: 105px 100px 82px 100px;
-  position: relative;
   box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
-  position: fixed;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+}
+
+.modal-feedback__form {
+  position: relative;
 }
 
 .modal-feedback__row {
@@ -1516,6 +1522,11 @@ a {
   top: 34px;
   right: 22px;
   opacity: 0.5;
+}
+
+.modal-feedback__close {
+  top: -71px;
+  right: -78px;
 }
 
 .modal__close:hover {

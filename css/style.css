@@ -140,6 +140,7 @@ a {
 
 .header__logo {
   display: inline-block;
+  vertical-align: top;
   margin-top: -21px;
   position: absolute;
   top: 2px;
@@ -474,7 +475,7 @@ a {
 .slider {
   background-color: #fff;
   padding-bottom: 97px;
-  height: 481px;
+  min-height: 481px;
   position: relative;
 }
 
@@ -836,6 +837,18 @@ a {
   text-align: left;
   padding: 20px 0;
   background-color: #000;
+}
+
+.services__button_current {
+  width: 278px;
+  text-align: left;
+  padding: 8px 0 8px 19px;
+  background-color: #000;
+  color: #f7e184;
+}
+
+.services__button_current::after {
+  position: static;
 }
 
 .services__slider-list {
@@ -2047,6 +2060,7 @@ a {
 }
 
 .catalog__item {
+  width: 360px;
   margin-right: 40px;
   margin-top: 49px;
   position: relative;
@@ -2089,6 +2103,7 @@ a {
 }
 
 .catalog__link {
+  width: 360px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

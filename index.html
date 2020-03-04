@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Девайс: Главная</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
@@ -422,19 +422,23 @@
     <textarea class="modal-feedback__area" name="text-field" id="area-field">В свободной форме</textarea>
 
     <button class="modal-feedback__button button button-macaroni" type="submit">Отправить</button>
-    <button class="modal-feedback__close modal__close">Закрыть форму</button>
+    <button class="modal-feedback__close modal__close">
+      <span class="visually-hidden">Закрыть форму</span>
+    </button>
   </form>
 </section>
 
 <!-- modal map -->
 <section class="modal modal-map">
   <div class="modal__wrapper">
-  <h2 class="visually-hidden">Как до нас добраться</h2>
-  <a class="modal-map__link" href="#">
-    <img class="modal-map__image" src="img/map-big.jpg" width="960" height="559" alt="Изображение карты и отметка на карте нашего местоположения">
-  </a>
-  <button class="modal-map__close modal__close">Закрыть карту</button>
-</div>
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <a class="modal-map__link" href="#">
+      <img class="modal-map__image" src="img/map-big.jpg" width="960" height="559" alt="Изображение карты и отметка на карте нашего местоположения">
+    </a>
+    <button class="modal-map__close modal__close">
+      <span class="visually-hidden">Закрыть карту</span>
+    </button>
+  </div>
 </section>
 </body>
 </html>

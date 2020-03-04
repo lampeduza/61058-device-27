@@ -56,10 +56,8 @@ html {
 }
 
 body {
-
   padding: 0;
   margin: 0;
-
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 30px;
@@ -1386,6 +1384,8 @@ a {
   top: 180px;
   left: 50%;
   transform: translateX(-50%);
+
+  display: none;
 }
 
 .modal__wrapper {

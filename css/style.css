@@ -569,7 +569,7 @@ a {
 }
 
 .selfie-info {
-  margin-top: -102px;
+  margin-top : -102px;
   margin-left: -27px;
 }
 
@@ -1397,7 +1397,6 @@ a {
   top: 180px;
   left: 50%;
   transform: translateX(-50%);
-
   display: none;
 }
 
@@ -1411,6 +1410,10 @@ a {
   background-color: #fff;
   padding: 105px 100px 82px 100px;
   box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
+}
+
+.modal-feedback_show {
+  display: block;
 }
 
 .modal-feedback__form {

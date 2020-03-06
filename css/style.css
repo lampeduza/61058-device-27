@@ -570,7 +570,7 @@ a { text-decoration: none; }
   display: flex;
   width: 80px;
   position: absolute;
-  top: 206px;
+  bottom: 245px;
   right: 81px;
   z-index: 100;
 }

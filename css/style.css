@@ -1829,6 +1829,7 @@ iframe {
   border: none;
   padding: 0;
   margin-bottom: 37px;
+  width: 267px;
 }
 
 .filter__form-item:last-child { margin-right: 0; }
@@ -1936,17 +1937,17 @@ iframe {
 
 .filter__form-list { list-style: none; }
 
-.filter__form-option {
-  margin-bottom: 0;
-  padding-left: 36px;
-}
+.filter__form-option { margin-bottom: 0; }
 
 .filter__form-option:last-child { margin-bottom: 0; }
+
+.filter__form-input:focus + label { outline: 1px solid red; }
 
 .filter__form-label {
   font-size: 14px;
   line-height: 40px;
   letter-spacing: 0.14px;
+  padding-left: 36px;
   display: block;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1958,7 +1959,7 @@ iframe {
 .filter__form-label::before {
   content: "";
   position: absolute;
-  left: -38px;
+  left: 0;
   top: 50%;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
@@ -2001,7 +2002,7 @@ iframe {
   height: 23px;
   background-image: url("../img/icons/checkbox-on.svg");
   position: absolute;
-  left: -38px;
+  left: 0;
   top: 50%;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
@@ -2016,7 +2017,7 @@ iframe {
   background-color: #000;
   border-radius: 50%;
   position: absolute;
-  left: -30px;
+  left: 8px;
   top: 50%;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
